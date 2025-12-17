@@ -1,0 +1,17 @@
+/* Custom Fonts and Spacing */
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Make titles look more "Engineering" */
+h1, h2, h3 {
+  color: #1f407a;
+  font-weight: 700;
+}
+
+/* Style for technical code blocks */
+.cell-output-display {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
