@@ -2,71 +2,27 @@
 title: "Math-Viz: PDE Visualization Framework"
 ---
 
-## 📊 Math-Viz
+## Math-Viz
 
-**PDE Visualization Framework** — Solve and visualize Partial Differential Equations with real-time 3D rendering and interactive simulations.
+**PDE Visualization Framework** - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.
 
----
+### Quick Links
+- [GitHub Repository](https://github.com/NoahWotschke/Math-Viz){target="_blank"}
+- [Live Web App](https://math-viz.streamlit.app){target="_blank"}
 
-### 🚀 Quick Start
+### Current Features
 
-Want to try it out right now?
+- **Explicit Finite Difference Solver** with stability control
+- **Real-time 3D Visualization** & analytical reference comparison
+- **35+ Boundary Condition Functions**
+- **MP4 Export** for animations
+- **CLI + Web Interface**
 
-**→ [Launch Web App](https://math-viz.streamlit.app){target="_blank"}** (No installation needed!)
+### Status
 
----
+🚀 In Development
 
-### ✨ Key Features
+### Getting Started
 
-| Feature | Description |
-|---------|-------------|
-| 🔢 **Finite Difference Solver** | Explicit solver with built-in stability control |
-| 📈 **Real-time 3D Visualization** | Interactive plots with analytical comparison |
-| 🎯 **35+ Boundary Conditions** | Pre-configured BC functions for quick setup |
-| 🎬 **Animation Export** | Generate MP4 videos of simulations |
-| 🖥️ **Dual Interface** | Use via CLI or interactive web app |
-
----
-
-### 💻 Try It
-
-#### Option 1: Web App (Easiest)
-[**Visit Math-Viz Live →**](https://math-viz.streamlit.app){target="_blank"}
-
-No setup required. Start visualizing PDEs immediately.
-
-#### Option 2: GitHub
-[**View Source Code →**](https://github.com/NoahWotschke/Math-Viz){target="_blank"}
-
-Clone the repo and run locally with full control.
-
-```bash
-git clone https://github.com/NoahWotschke/Math-Viz.git
-cd Math-Viz
-```
-
----
-
-### 📊 What You Can Do
-
-- Solve heat equation, wave equation, Schrödinger equation, and more
-- Set custom boundary conditions
-- Visualize solutions in real-time 3D
-- Compare numerical vs analytical solutions
-- Export animations for reports/presentations
-
----
-
-### 🔧 Current Status
-
-🚀 **In Active Development**
-
-New features and improvements coming soon!
-
----
-
-### 📚 Learn More
-
-- **[GitHub Repository](https://github.com/NoahWotschke/Math-Viz){target="_blank"}** — Full documentation and source code
-- **[Live Demo](https://math-viz.streamlit.app){target="_blank"}** — Try it now
+Visit the [live web app](https://math-viz.streamlit.app){target="_blank"} to get started, or check out the [GitHub repo](https://github.com/NoahWotschke/Math-Viz){target="_blank"} for more details and setup instructions.
 
