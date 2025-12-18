@@ -2,8 +2,6 @@
 title: "Projects"
 ---
 
-## My Projects
-
 ### [Math-Viz](math-viz.qmd)
 
 **PDE Visualization Framework** - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.
@@ -12,4 +10,3 @@ title: "Projects"
 
 **Quick Links:** [GitHub](https://github.com/NoahWotschke/Math-Viz){target="_blank"} | [View Details](math-viz.qmd)
 
-**Status:** In Development 
