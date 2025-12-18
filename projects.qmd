@@ -4,17 +4,12 @@ title: "Projects"
 
 ## My Projects
 
-### [Math-Viz](https://github.com/NoahWotschke/Math-Viz){target="_blank"}
+### [Math-Viz](math-viz.qmd)
 
 **PDE Visualization Framework** - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.
 
 **Try it out:** [Live Web App](https://math-viz.streamlit.app){target="_blank"}
 
-**Current Features:**
-- Explicit Finite Difference Solver with stability control
-- Real-time 3D Visualization & analytical reference comparison
-- 35+ Boundary Condition Functions
-- MP4 Export for animations
-- CLI + Web Interface
+**Quick Links:** [GitHub](https://github.com/NoahWotschke/Math-Viz){target="_blank"} | [View Details](math-viz.qmd)
 
 **Status:** In Development 
