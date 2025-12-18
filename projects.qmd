@@ -17,4 +17,4 @@ title: "Projects"
 - MP4 Export for animations
 - CLI + Web Interface
 
-**Status:** In Development 🚀
+**Status:** In Development 
