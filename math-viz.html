@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -122,12 +157,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#math-viz" id="toc-math-viz" class="nav-link active" data-scroll-target="#math-viz">Math-Viz</a>
+  <li><a href="#math-viz" id="toc-math-viz" class="nav-link active" data-scroll-target="#math-viz">📊 Math-Viz</a>
   <ul class="collapse">
-  <li><a href="#quick-links" id="toc-quick-links" class="nav-link" data-scroll-target="#quick-links">Quick Links</a></li>
-  <li><a href="#current-features" id="toc-current-features" class="nav-link" data-scroll-target="#current-features">Current Features</a></li>
-  <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status">Status</a></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a></li>
+  <li><a href="#quick-start" id="toc-quick-start" class="nav-link" data-scroll-target="#quick-start">🚀 Quick Start</a></li>
+  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">✨ Key Features</a></li>
+  <li><a href="#try-it" id="toc-try-it" class="nav-link" data-scroll-target="#try-it">💻 Try It</a></li>
+  <li><a href="#what-you-can-do" id="toc-what-you-can-do" class="nav-link" data-scroll-target="#what-you-can-do">📊 What You Can Do</a></li>
+  <li><a href="#current-status" id="toc-current-status" class="nav-link" data-scroll-target="#current-status">🔧 Current Status</a></li>
+  <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">📚 Learn More</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -155,32 +192,92 @@ ul.task-list li input[type="checkbox"] {
 
 
 <section id="math-viz" class="level2">
-<h2 class="anchored" data-anchor-id="math-viz">Math-Viz</h2>
-<p><strong>PDE Visualization Framework</strong> - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.</p>
-<section id="quick-links" class="level3">
-<h3 class="anchored" data-anchor-id="quick-links">Quick Links</h3>
+<h2 class="anchored" data-anchor-id="math-viz">📊 Math-Viz</h2>
+<p><strong>PDE Visualization Framework</strong> — Solve and visualize Partial Differential Equations with real-time 3D rendering and interactive simulations.</p>
+<hr>
+<section id="quick-start" class="level3">
+<h3 class="anchored" data-anchor-id="quick-start">🚀 Quick Start</h3>
+<p>Want to try it out right now?</p>
+<p><strong>→ <a href="https://math-viz.streamlit.app" target="_blank">Launch Web App</a></strong> (No installation needed!)</p>
+<hr>
+</section>
+<section id="key-features" class="level3">
+<h3 class="anchored" data-anchor-id="key-features">✨ Key Features</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>🔢 <strong>Finite Difference Solver</strong></td>
+<td>Explicit solver with built-in stability control</td>
+</tr>
+<tr class="even">
+<td>📈 <strong>Real-time 3D Visualization</strong></td>
+<td>Interactive plots with analytical comparison</td>
+</tr>
+<tr class="odd">
+<td>🎯 <strong>35+ Boundary Conditions</strong></td>
+<td>Pre-configured BC functions for quick setup</td>
+</tr>
+<tr class="even">
+<td>🎬 <strong>Animation Export</strong></td>
+<td>Generate MP4 videos of simulations</td>
+</tr>
+<tr class="odd">
+<td>🖥️ <strong>Dual Interface</strong></td>
+<td>Use via CLI or interactive web app</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="try-it" class="level3">
+<h3 class="anchored" data-anchor-id="try-it">💻 Try It</h3>
+<section id="option-1-web-app-easiest" class="level4">
+<h4 class="anchored" data-anchor-id="option-1-web-app-easiest">Option 1: Web App (Easiest)</h4>
+<p><a href="https://math-viz.streamlit.app" target="_blank"><strong>Visit Math-Viz Live →</strong></a></p>
+<p>No setup required. Start visualizing PDEs immediately.</p>
+</section>
+<section id="option-2-github" class="level4">
+<h4 class="anchored" data-anchor-id="option-2-github">Option 2: GitHub</h4>
+<p><a href="https://github.com/NoahWotschke/Math-Viz" target="_blank"><strong>View Source Code →</strong></a></p>
+<p>Clone the repo and run locally with full control.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/NoahWotschke/Math-Viz.git</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> Math-Viz</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="what-you-can-do" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-can-do">📊 What You Can Do</h3>
 <ul>
-<li><a href="https://github.com/NoahWotschke/Math-Viz" target="_blank">GitHub Repository</a></li>
-<li><a href="https://math-viz.streamlit.app" target="_blank">Live Web App</a></li>
+<li>Solve heat equation, wave equation, Schrödinger equation, and more</li>
+<li>Set custom boundary conditions</li>
+<li>Visualize solutions in real-time 3D</li>
+<li>Compare numerical vs analytical solutions</li>
+<li>Export animations for reports/presentations</li>
 </ul>
+<hr>
 </section>
-<section id="current-features" class="level3">
-<h3 class="anchored" data-anchor-id="current-features">Current Features</h3>
+<section id="current-status" class="level3">
+<h3 class="anchored" data-anchor-id="current-status">🔧 Current Status</h3>
+<p>🚀 <strong>In Active Development</strong></p>
+<p>New features and improvements coming soon!</p>
+<hr>
+</section>
+<section id="learn-more" class="level3">
+<h3 class="anchored" data-anchor-id="learn-more">📚 Learn More</h3>
 <ul>
-<li><strong>Explicit Finite Difference Solver</strong> with stability control</li>
-<li><strong>Real-time 3D Visualization</strong> &amp; analytical reference comparison</li>
-<li><strong>35+ Boundary Condition Functions</strong></li>
-<li><strong>MP4 Export</strong> for animations</li>
-<li><strong>CLI + Web Interface</strong></li>
+<li><strong><a href="https://github.com/NoahWotschke/Math-Viz" target="_blank">GitHub Repository</a></strong> — Full documentation and source code</li>
+<li><strong><a href="https://math-viz.streamlit.app" target="_blank">Live Demo</a></strong> — Try it now</li>
 </ul>
-</section>
-<section id="status" class="level3">
-<h3 class="anchored" data-anchor-id="status">Status</h3>
-<p>🚀 In Development</p>
-</section>
-<section id="getting-started" class="level3">
-<h3 class="anchored" data-anchor-id="getting-started">Getting Started</h3>
-<p>Visit the <a href="https://math-viz.streamlit.app" target="_blank">live web app</a> to get started, or check out the <a href="https://github.com/NoahWotschke/Math-Viz" target="_blank">GitHub repo</a> for more details and setup instructions.</p>
 
 
 </section>
