@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "math-viz.html",
+    "href": "math-viz.html",
+    "title": "Math-Viz: PDE Visualization Framework",
+    "section": "",
+    "text": "PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\n\n\n\nGitHub Repository\nLive Web App\n\n\n\n\n\nExplicit Finite Difference Solver with stability control\nReal-time 3D Visualization & analytical reference comparison\n35+ Boundary Condition Functions\nMP4 Export for animations\nCLI + Web Interface\n\n\n\n\n🚀 In Development\n\n\n\nVisit the live web app to get started, or check out the GitHub repo for more details and setup instructions."
+  },
+  {
+    "objectID": "math-viz.html#math-viz",
+    "href": "math-viz.html#math-viz",
+    "title": "Math-Viz: PDE Visualization Framework",
+    "section": "",
+    "text": "PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\n\n\n\nGitHub Repository\nLive Web App\n\n\n\n\n\nExplicit Finite Difference Solver with stability control\nReal-time 3D Visualization & analytical reference comparison\n35+ Boundary Condition Functions\nMP4 Export for animations\nCLI + Web Interface\n\n\n\n\n🚀 In Development\n\n\n\nVisit the live web app to get started, or check out the GitHub repo for more details and setup instructions."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\nTry it out: Live Web App\nQuick Links: GitHub | View Details\nStatus: In Development"
+  },
+  {
+    "objectID": "projects.html#my-projects",
+    "href": "projects.html#my-projects",
+    "title": "Projects",
+    "section": "",
+    "text": "PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\nTry it out: Live Web App\nQuick Links: GitHub | View Details\nStatus: In Development"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Noah Wotscke | Mechanical Engineering",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
     "objectID": "extracurriculars.html",
     "href": "extracurriculars.html",
     "title": "Activities",
@@ -12,33 +54,5 @@
     "title": "Activities",
     "section": "",
     "text": "Coming soon! Add your activities and extracurricular involvement here."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Noah Wotscke | Mechanical Engineering",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\nTry it out: Live Web App\nCurrent Features: - Explicit Finite Difference Solver with stability control - Real-time 3D Visualization & analytical reference comparison - 35+ Boundary Condition Functions - MP4 Export for animations - CLI + Web Interface\nStatus: In Development 🚀"
-  },
-  {
-    "objectID": "projects.html#my-projects",
-    "href": "projects.html#my-projects",
-    "title": "Projects",
-    "section": "",
-    "text": "PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\nTry it out: Live Web App\nCurrent Features: - Explicit Finite Difference Solver with stability control - Real-time 3D Visualization & analytical reference comparison - 35+ Boundary Condition Functions - MP4 Export for animations - CLI + Web Interface\nStatus: In Development 🚀"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   }
 ]
