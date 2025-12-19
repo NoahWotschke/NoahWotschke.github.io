@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Math-Viz – Noah Wotschke | Mechanical Engineering</title>
+<title>Mathematical Derivations – Noah Wotschke | Mechanical Engineering</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f5c3f06fbfae0a0c06815c3c7afb2723.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-f5c3f06fbfae0a0c06815c3c7afb2723.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Noah Wotschke | Mechanical Engineering</span>
     </a>
   </div>
@@ -91,19 +91,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../extracurriculars.html"> 
+    <a class="nav-link" href="../extracurriculars.html"> 
 <span class="menu-text">Activities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -122,11 +122,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pde-visualization-framework" id="toc-pde-visualization-framework" class="nav-link active" data-scroll-target="#pde-visualization-framework">PDE Visualization Framework</a>
-  <ul class="collapse">
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a></li>
-  </ul></li>
+  <li><a href="#heat-equation" id="toc-heat-equation" class="nav-link active" data-scroll-target="#heat-equation">Heat Equation</a></li>
   </ul>
 </nav>
     </div>
@@ -135,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Math-Viz</h1>
+<h1 class="title">Mathematical Derivations</h1>
 </div>
 
 
@@ -152,58 +148,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../../Images/Math-Viz_PREVIEW.jpeg" alt="Math-Viz 3D Visualization" width="250" align="right" style="margin: 0 0 15px 15px; border-radius: 8px;"></p>
-<section id="pde-visualization-framework" class="level2">
-<h2 class="anchored" data-anchor-id="pde-visualization-framework">PDE Visualization Framework</h2>
-<p>A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.</p>
-<p><strong>Try it out:</strong> <a href="https://math-viz.streamlit.app" target="_blank">Live Web App</a></p>
-<p><strong>GitHub Repository:</strong> <a href="https://github.com/NoahWotschke/Math-Viz" target="_blank">View on GitHub</a></p>
-<section id="overview" class="level3">
-<h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>Math-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.</p>
-<section id="supported-pdes" class="level4">
-<h4 class="anchored" data-anchor-id="supported-pdes">Supported PDEs</h4>
-<pre><code>PDE Overview
-├── Heat Equation (Parabolic / Time-Dependent)
-│   ├── Finite Domain (Bounded)
-│   └── Infinite Domain (Unbounded)
-│       ├── Fourier Transform
-│       └── Heat Kernel (Fundamental Solution)
-│
-├── Laplace Equation (Elliptic / Steady-State)
-│   ├── Cartesian (Rectangle)
-│   │   ├── Dirichlet (Prescribed Value)
-│   │   └── Neumann (Prescribed Derivative)
-│   └── Polar (Disk)
-│       ├── Dirichlet
-│       └── Neumann
-│
-├── Poisson Equation (Elliptic / Steady-State)
-│   ├── Dirichlet
-│   └── Neumann
-│
-└── Wave Equation (Hyperbolic / Time-Dependent)
-    ├── Finite Domain (Standing Waves)
-    │   ├── 1D String (Separation of Variables)
-    │   └── 2D Membrane (Sep. of Vars in Polar/Rect)
-    │
-    └── Infinite Domain (Traveling Waves)
-        ├── 1D (D'Alembert's Formula)
-        ├── 2D (Method of Descent / Poisson)
-        └── 3D (Kirchhoff's Formula)</code></pre>
-</section>
-</section>
-<section id="features" class="level3">
-<h3 class="anchored" data-anchor-id="features">Features</h3>
-<ul>
-<li>Real-time 3D rendering</li>
-<li>PDE solving capabilities</li>
-<li>Interactive parameter adjustment</li>
-<li>Export functionality</li>
-</ul>
+<section id="heat-equation" class="level2">
+<h2 class="anchored" data-anchor-id="heat-equation">Heat Equation</h2>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

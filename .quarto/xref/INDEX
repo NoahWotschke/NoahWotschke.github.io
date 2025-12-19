@@ -28,5 +28,11 @@
   },
   "projects/math-viz/derivations.qmd": {
     "derivations.html": "61eb4f62"
+  },
+  "math-viz/index.qmd": {
+    "index.html": "d0a7cdcf"
+  },
+  "math-viz/derivations.qmd": {
+    "derivations.html": "6b1471b6"
   }
 }
