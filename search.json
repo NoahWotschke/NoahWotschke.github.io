@@ -4,7 +4,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Math-Viz\nPDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\nTry it out: Live Web App\nQuick Links: GitHub | View Details"
+    "text": "Math-Viz\nPDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\nTry it out: Live Web App\nQuick Links: GitHub | View Details | Mathematical Derivations"
   },
   {
     "objectID": "about.html",
@@ -14,35 +14,11 @@
     "text": "About this site"
   },
   {
-    "objectID": "projects/math-viz.html#pde-visualization-framework",
-    "href": "projects/math-viz.html#pde-visualization-framework",
+    "objectID": "projects/math-viz/index.html#pde-visualization-framework",
+    "href": "projects/math-viz/index.html#pde-visualization-framework",
     "title": "Math-Viz",
     "section": "PDE Visualization Framework",
-    "text": "PDE Visualization Framework\nA comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\nTry it out: Live Web App\nGitHub Repository: View on GitHub\n\nOverview\nMath-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.\n\nSupported PDEs\nPDE Overview\n├── Heat Equation (Parabolic / Time-Dependent)\n│   ├── Finite Domain (Bounded)\n│   └── Infinite Domain (Unbounded)\n│       ├── Fourier Transform\n│       └── Heat Kernel (Fundamental Solution)\n│\n├── Laplace Equation (Elliptic / Steady-State)\n│   ├── Cartesian (Rectangle)\n│   │   ├── Dirichlet (Prescribed Value)\n│   │   └── Neumann (Prescribed Derivative)\n│   └── Polar (Disk)\n│       ├── Dirichlet\n│       └── Neumann\n│\n├── Poisson Equation (Elliptic / Steady-State)\n│   ├── Dirichlet\n│   └── Neumann\n│\n└── Wave Equation (Hyperbolic / Time-Dependent)\n    ├── Finite Domain (Standing Waves)\n    │   ├── 1D String (Separation of Variables)\n    │   └── 2D Membrane (Sep. of Vars in Polar/Rect)\n    │\n    └── Infinite Domain (Traveling Waves)\n        ├── 1D (D'Alembert's Formula)\n        ├── 2D (Method of Descent / Poisson)\n        └── 3D (Kirchhoff's Formula)\n\n\n\nFeatures\n\nReal-time 3D rendering\nPDE solving capabilities\nInteractive parameter adjustment\nExport functionality",
-    "crumbs": [
-      "Projects",
-      "Math-Viz"
-    ]
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Welcome to my projects! Here you’ll find a collection of my work in mechanical engineering, visualization, and software development.\nBrowse the sections below to explore detailed documentation and mathematical derivations.",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#projects",
-    "href": "projects/index.html#projects",
-    "title": "Projects",
-    "section": "",
-    "text": "Welcome to my projects! Here you’ll find a collection of my work in mechanical engineering, visualization, and software development.\nBrowse the sections below to explore detailed documentation and mathematical derivations.",
-    "crumbs": [
-      "Projects"
-    ]
+    "text": "PDE Visualization Framework\nA comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\nTry it out: Live Web App\nGitHub Repository: View on GitHub\n\nOverview\nMath-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.\n\nSupported PDEs\nPDE Overview\n├── Heat Equation (Parabolic / Time-Dependent)\n│   ├── Finite Domain (Bounded)\n│   └── Infinite Domain (Unbounded)\n│       ├── Fourier Transform\n│       └── Heat Kernel (Fundamental Solution)\n│\n├── Laplace Equation (Elliptic / Steady-State)\n│   ├── Cartesian (Rectangle)\n│   │   ├── Dirichlet (Prescribed Value)\n│   │   └── Neumann (Prescribed Derivative)\n│   └── Polar (Disk)\n│       ├── Dirichlet\n│       └── Neumann\n│\n├── Poisson Equation (Elliptic / Steady-State)\n│   ├── Dirichlet\n│   └── Neumann\n│\n└── Wave Equation (Hyperbolic / Time-Dependent)\n    ├── Finite Domain (Standing Waves)\n    │   ├── 1D String (Separation of Variables)\n    │   └── 2D Membrane (Sep. of Vars in Polar/Rect)\n    │\n    └── Infinite Domain (Traveling Waves)\n        ├── 1D (D'Alembert's Formula)\n        ├── 2D (Method of Descent / Poisson)\n        └── 3D (Kirchhoff's Formula)\n\n\n\nFeatures\n\nReal-time 3D rendering\nPDE solving capabilities\nInteractive parameter adjustment\nExport functionality"
   },
   {
     "objectID": "extracurriculars.html",
