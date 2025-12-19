@@ -9,18 +9,12 @@ website:
     left:
       - href: index.html
         text: Home
-      - href: projects/index.html
+      - href: projects.html
         text: Projects
       - href: extracurriculars.html
         text: Activities
       - href: about.html
         text: About
-  sidebar:
-    - id: projects
-      contents:
-        - projects/index.qmd
-        - projects/math-viz.qmd
-        - projects/math-viz-derivations.qmd
 
 format:
   html:

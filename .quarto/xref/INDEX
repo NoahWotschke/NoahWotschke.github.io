@@ -22,5 +22,11 @@
   },
   "projects/index.qmd": {
     "index.html": "ac153e99"
+  },
+  "projects/math-viz/index.qmd": {
+    "index.html": "c9e9f4e6"
+  },
+  "projects/math-viz/derivations.qmd": {
+    "derivations.html": "61eb4f62"
   }
 }

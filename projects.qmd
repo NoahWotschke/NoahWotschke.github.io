@@ -4,11 +4,11 @@ title: "Projects"
 
 <img src="Images/Math-Viz_PREVIEW.jpeg" alt="Math-Viz 3D Visualization" width="250" align="right" style="margin: 0 0 15px 15px; border-radius: 8px;">
 
-### [Math-Viz](math-viz.qmd)
+### [Math-Viz](projects/math-viz/index.html)
 
 **PDE Visualization Framework** - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.
 
 **Try it out:** [Live Web App](https://math-viz.streamlit.app){target="_blank"}
 
-**Quick Links:** [GitHub](https://github.com/NoahWotschke/Math-Viz){target="_blank"} | [View Details](math-viz.qmd)
+**Quick Links:** [GitHub](https://github.com/NoahWotschke/Math-Viz){target="_blank"} | [View Details](projects/math-viz/index.html) | [Mathematical Derivations](projects/math-viz/derivations.html)
 

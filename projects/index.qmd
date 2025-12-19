@@ -1,9 +1,0 @@
----
-title: "Projects"
----
-
-## Projects
-
-Welcome to my projects! Here you'll find a collection of my work in mechanical engineering, visualization, and software development.
-
-Browse the sections below to explore detailed documentation and mathematical derivations.

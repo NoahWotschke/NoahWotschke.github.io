@@ -2,7 +2,7 @@
 title: "Math-Viz"
 ---
 
-<img src="../Images/Math-Viz_PREVIEW.jpeg" alt="Math-Viz 3D Visualization" width="250" align="right" style="margin: 0 0 15px 15px; border-radius: 8px;">
+<img src="../../Images/Math-Viz_PREVIEW.jpeg" alt="Math-Viz 3D Visualization" width="250" align="right" style="margin: 0 0 15px 15px; border-radius: 8px;">
 
 ## PDE Visualization Framework
 
