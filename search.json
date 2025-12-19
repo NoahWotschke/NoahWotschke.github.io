@@ -31,6 +31,56 @@
     "text": "Coming soon! Add your activities and extracurricular involvement here."
   },
   {
+    "objectID": "projects/math-viz-derivations.html",
+    "href": "projects/math-viz-derivations.html",
+    "title": "Mathematical Derivations",
+    "section": "",
+    "text": "The heat equation on a finite domain \\([0, L]\\) with Dirichlet boundary conditions:\n\\[\\frac{\\partial u}{\\partial t} = \\alpha \\frac{\\partial^2 u}{\\partial x^2}, \\quad u(0,t) = u(L,t) = 0\\]\nSolution via Separation of Variables:\nAssume \\(u(x,t) = X(x)T(t)\\). This leads to:\n\\[\\frac{1}{\\alpha T}\\frac{dT}{dt} = \\frac{1}{X}\\frac{d^2X}{dx^2} = -\\lambda\\]\nwhere \\(\\lambda\\) is the separation constant.\nThe spatial problem becomes: \\[\\frac{d^2X}{dx^2} + \\lambda X = 0\\]\nwith eigenvalues \\(\\lambda_n = \\left(\\frac{n\\pi}{L}\\right)^2\\) and eigenfunctions \\(X_n(x) = \\sin\\left(\\frac{n\\pi x}{L}\\right)\\).\nThe temporal problem gives: \\[T_n(t) = e^{-\\alpha \\lambda_n t} = e^{-\\alpha (n\\pi/L)^2 t}\\]\nGeneral Solution: \\[u(x,t) = \\sum_{n=1}^{\\infty} B_n \\sin\\left(\\frac{n\\pi x}{L}\\right) e^{-\\alpha (n\\pi/L)^2 t}\\]\nwhere coefficients \\(B_n\\) are determined by the initial condition: \\[B_n = \\frac{2}{L}\\int_0^L u(x,0) \\sin\\left(\\frac{n\\pi x}{L}\\right) dx\\]",
+    "crumbs": [
+      "Mathematical Derivations"
+    ]
+  },
+  {
+    "objectID": "projects/math-viz-derivations.html#heat-equation",
+    "href": "projects/math-viz-derivations.html#heat-equation",
+    "title": "Mathematical Derivations",
+    "section": "",
+    "text": "The heat equation on a finite domain \\([0, L]\\) with Dirichlet boundary conditions:\n\\[\\frac{\\partial u}{\\partial t} = \\alpha \\frac{\\partial^2 u}{\\partial x^2}, \\quad u(0,t) = u(L,t) = 0\\]\nSolution via Separation of Variables:\nAssume \\(u(x,t) = X(x)T(t)\\). This leads to:\n\\[\\frac{1}{\\alpha T}\\frac{dT}{dt} = \\frac{1}{X}\\frac{d^2X}{dx^2} = -\\lambda\\]\nwhere \\(\\lambda\\) is the separation constant.\nThe spatial problem becomes: \\[\\frac{d^2X}{dx^2} + \\lambda X = 0\\]\nwith eigenvalues \\(\\lambda_n = \\left(\\frac{n\\pi}{L}\\right)^2\\) and eigenfunctions \\(X_n(x) = \\sin\\left(\\frac{n\\pi x}{L}\\right)\\).\nThe temporal problem gives: \\[T_n(t) = e^{-\\alpha \\lambda_n t} = e^{-\\alpha (n\\pi/L)^2 t}\\]\nGeneral Solution: \\[u(x,t) = \\sum_{n=1}^{\\infty} B_n \\sin\\left(\\frac{n\\pi x}{L}\\right) e^{-\\alpha (n\\pi/L)^2 t}\\]\nwhere coefficients \\(B_n\\) are determined by the initial condition: \\[B_n = \\frac{2}{L}\\int_0^L u(x,0) \\sin\\left(\\frac{n\\pi x}{L}\\right) dx\\]",
+    "crumbs": [
+      "Mathematical Derivations"
+    ]
+  },
+  {
+    "objectID": "projects/math-viz-derivations.html#laplace-equation",
+    "href": "projects/math-viz-derivations.html#laplace-equation",
+    "title": "Mathematical Derivations",
+    "section": "Laplace Equation",
+    "text": "Laplace Equation\n\nCartesian Coordinates (Rectangle)\nThe Laplace equation on a rectangle \\([0,a] \\times [0,b]\\) with Dirichlet boundary conditions:\n\\[\\nabla^2 u = \\frac{\\partial^2 u}{\\partial x^2} + \\frac{\\partial^2 u}{\\partial y^2} = 0\\]\nSeparation of Variables:\nAssume \\(u(x,y) = X(x)Y(y)\\):\n\\[\\frac{1}{X}\\frac{d^2X}{dx^2} + \\frac{1}{Y}\\frac{d^2Y}{dy^2} = 0\\]\nThis gives: \\[\\frac{1}{X}\\frac{d^2X}{dx^2} = -\\lambda, \\quad \\frac{1}{Y}\\frac{d^2Y}{dy^2} = \\lambda\\]",
+    "crumbs": [
+      "Mathematical Derivations"
+    ]
+  },
+  {
+    "objectID": "projects/math-viz-derivations.html#wave-equation",
+    "href": "projects/math-viz-derivations.html#wave-equation",
+    "title": "Mathematical Derivations",
+    "section": "Wave Equation",
+    "text": "Wave Equation\n\n1D Wave Equation (Infinite Domain)\n\\[\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\frac{\\partial^2 u}{\\partial x^2}\\]\nD’Alembert’s Solution:\nThe general solution can be written as: \\[u(x,t) = f(x + ct) + g(x - ct)\\]\nwhere \\(f\\) and \\(g\\) are determined by initial conditions: - \\(u(x,0) = \\phi(x)\\) (initial displacement) - \\(\\frac{\\partial u}{\\partial t}(x,0) = \\psi(x)\\) (initial velocity)\nExplicit Formula: \\[u(x,t) = \\frac{\\phi(x+ct) + \\phi(x-ct)}{2} + \\frac{1}{2c}\\int_{x-ct}^{x+ct} \\psi(\\xi) d\\xi\\]",
+    "crumbs": [
+      "Mathematical Derivations"
+    ]
+  },
+  {
+    "objectID": "projects/math-viz-derivations.html#poisson-equation",
+    "href": "projects/math-viz-derivations.html#poisson-equation",
+    "title": "Mathematical Derivations",
+    "section": "Poisson Equation",
+    "text": "Poisson Equation\n\\[\\nabla^2 u = f(x,y)\\]\nThe Green’s function approach provides the fundamental solution \\(G(x,y; x_0, y_0)\\) satisfying: \\[\\nabla^2 G = \\delta(x-x_0, y-y_0)\\]\nFor the 2D case: \\[G(x,y; x_0, y_0) = -\\frac{1}{2\\pi} \\ln\\sqrt{(x-x_0)^2 + (y-y_0)^2}\\]\n\nMore derivations coming soon…",
+    "crumbs": [
+      "Mathematical Derivations"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Noah Wotscke | Mechanical Engineering",

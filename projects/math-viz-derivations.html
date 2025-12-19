@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Math-Viz – Noah Wotschke | Mechanical Engineering</title>
+<title>Mathematical Derivations – Noah Wotschke | Mechanical Engineering</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -117,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../projects/math-viz.html">Math-Viz</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../projects/math-viz-derivations.html">Mathematical Derivations</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -134,13 +163,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../projects/math-viz.html" class="sidebar-item-text sidebar-link active">
+  <a href="../projects/math-viz.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Math-Viz</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../projects/math-viz-derivations.html" class="sidebar-item-text sidebar-link">
+  <a href="../projects/math-viz-derivations.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Mathematical Derivations</span></a>
   </div>
 </li>
@@ -154,11 +183,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pde-visualization-framework" id="toc-pde-visualization-framework" class="nav-link active" data-scroll-target="#pde-visualization-framework">PDE Visualization Framework</a>
+  <li><a href="#heat-equation" id="toc-heat-equation" class="nav-link active" data-scroll-target="#heat-equation">Heat Equation</a>
   <ul class="collapse">
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a></li>
+  <li><a href="#classical-solution-finite-domain" id="toc-classical-solution-finite-domain" class="nav-link" data-scroll-target="#classical-solution-finite-domain">Classical Solution (Finite Domain)</a></li>
   </ul></li>
+  <li><a href="#laplace-equation" id="toc-laplace-equation" class="nav-link" data-scroll-target="#laplace-equation">Laplace Equation</a>
+  <ul class="collapse">
+  <li><a href="#cartesian-coordinates-rectangle" id="toc-cartesian-coordinates-rectangle" class="nav-link" data-scroll-target="#cartesian-coordinates-rectangle">Cartesian Coordinates (Rectangle)</a></li>
+  </ul></li>
+  <li><a href="#wave-equation" id="toc-wave-equation" class="nav-link" data-scroll-target="#wave-equation">Wave Equation</a>
+  <ul class="collapse">
+  <li><a href="#d-wave-equation-infinite-domain" id="toc-d-wave-equation-infinite-domain" class="nav-link" data-scroll-target="#d-wave-equation-infinite-domain">1D Wave Equation (Infinite Domain)</a></li>
+  </ul></li>
+  <li><a href="#poisson-equation" id="toc-poisson-equation" class="nav-link" data-scroll-target="#poisson-equation">Poisson Equation</a></li>
   </ul>
 </nav>
     </div>
@@ -167,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Math-Viz</h1>
+<h1 class="title">Mathematical Derivations</h1>
 </div>
 
 
@@ -184,58 +221,58 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../Images/Math-Viz_PREVIEW.jpeg" alt="Math-Viz 3D Visualization" width="250" align="right" style="margin: 0 0 15px 15px; border-radius: 8px;"></p>
-<section id="pde-visualization-framework" class="level2">
-<h2 class="anchored" data-anchor-id="pde-visualization-framework">PDE Visualization Framework</h2>
-<p>A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.</p>
-<p><strong>Try it out:</strong> <a href="https://math-viz.streamlit.app" target="_blank">Live Web App</a></p>
-<p><strong>GitHub Repository:</strong> <a href="https://github.com/NoahWotschke/Math-Viz" target="_blank">View on GitHub</a></p>
-<section id="overview" class="level3">
-<h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>Math-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.</p>
-<section id="supported-pdes" class="level4">
-<h4 class="anchored" data-anchor-id="supported-pdes">Supported PDEs</h4>
-<pre><code>PDE Overview
-├── Heat Equation (Parabolic / Time-Dependent)
-│   ├── Finite Domain (Bounded)
-│   └── Infinite Domain (Unbounded)
-│       ├── Fourier Transform
-│       └── Heat Kernel (Fundamental Solution)
-│
-├── Laplace Equation (Elliptic / Steady-State)
-│   ├── Cartesian (Rectangle)
-│   │   ├── Dirichlet (Prescribed Value)
-│   │   └── Neumann (Prescribed Derivative)
-│   └── Polar (Disk)
-│       ├── Dirichlet
-│       └── Neumann
-│
-├── Poisson Equation (Elliptic / Steady-State)
-│   ├── Dirichlet
-│   └── Neumann
-│
-└── Wave Equation (Hyperbolic / Time-Dependent)
-    ├── Finite Domain (Standing Waves)
-    │   ├── 1D String (Separation of Variables)
-    │   └── 2D Membrane (Sep. of Vars in Polar/Rect)
-    │
-    └── Infinite Domain (Traveling Waves)
-        ├── 1D (D'Alembert's Formula)
-        ├── 2D (Method of Descent / Poisson)
-        └── 3D (Kirchhoff's Formula)</code></pre>
+<section id="heat-equation" class="level2">
+<h2 class="anchored" data-anchor-id="heat-equation">Heat Equation</h2>
+<section id="classical-solution-finite-domain" class="level3">
+<h3 class="anchored" data-anchor-id="classical-solution-finite-domain">Classical Solution (Finite Domain)</h3>
+<p>The heat equation on a finite domain <span class="math inline">\([0, L]\)</span> with Dirichlet boundary conditions:</p>
+<p><span class="math display">\[\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}, \quad u(0,t) = u(L,t) = 0\]</span></p>
+<p><strong>Solution via Separation of Variables:</strong></p>
+<p>Assume <span class="math inline">\(u(x,t) = X(x)T(t)\)</span>. This leads to:</p>
+<p><span class="math display">\[\frac{1}{\alpha T}\frac{dT}{dt} = \frac{1}{X}\frac{d^2X}{dx^2} = -\lambda\]</span></p>
+<p>where <span class="math inline">\(\lambda\)</span> is the separation constant.</p>
+<p>The spatial problem becomes: <span class="math display">\[\frac{d^2X}{dx^2} + \lambda X = 0\]</span></p>
+<p>with eigenvalues <span class="math inline">\(\lambda_n = \left(\frac{n\pi}{L}\right)^2\)</span> and eigenfunctions <span class="math inline">\(X_n(x) = \sin\left(\frac{n\pi x}{L}\right)\)</span>.</p>
+<p>The temporal problem gives: <span class="math display">\[T_n(t) = e^{-\alpha \lambda_n t} = e^{-\alpha (n\pi/L)^2 t}\]</span></p>
+<p><strong>General Solution:</strong> <span class="math display">\[u(x,t) = \sum_{n=1}^{\infty} B_n \sin\left(\frac{n\pi x}{L}\right) e^{-\alpha (n\pi/L)^2 t}\]</span></p>
+<p>where coefficients <span class="math inline">\(B_n\)</span> are determined by the initial condition: <span class="math display">\[B_n = \frac{2}{L}\int_0^L u(x,0) \sin\left(\frac{n\pi x}{L}\right) dx\]</span></p>
+<hr>
 </section>
 </section>
-<section id="features" class="level3">
-<h3 class="anchored" data-anchor-id="features">Features</h3>
-<ul>
-<li>Real-time 3D rendering</li>
-<li>PDE solving capabilities</li>
-<li>Interactive parameter adjustment</li>
-<li>Export functionality</li>
-</ul>
+<section id="laplace-equation" class="level2">
+<h2 class="anchored" data-anchor-id="laplace-equation">Laplace Equation</h2>
+<section id="cartesian-coordinates-rectangle" class="level3">
+<h3 class="anchored" data-anchor-id="cartesian-coordinates-rectangle">Cartesian Coordinates (Rectangle)</h3>
+<p>The Laplace equation on a rectangle <span class="math inline">\([0,a] \times [0,b]\)</span> with Dirichlet boundary conditions:</p>
+<p><span class="math display">\[\nabla^2 u = \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0\]</span></p>
+<p><strong>Separation of Variables:</strong></p>
+<p>Assume <span class="math inline">\(u(x,y) = X(x)Y(y)\)</span>:</p>
+<p><span class="math display">\[\frac{1}{X}\frac{d^2X}{dx^2} + \frac{1}{Y}\frac{d^2Y}{dy^2} = 0\]</span></p>
+<p>This gives: <span class="math display">\[\frac{1}{X}\frac{d^2X}{dx^2} = -\lambda, \quad \frac{1}{Y}\frac{d^2Y}{dy^2} = \lambda\]</span></p>
+<hr>
+</section>
+</section>
+<section id="wave-equation" class="level2">
+<h2 class="anchored" data-anchor-id="wave-equation">Wave Equation</h2>
+<section id="d-wave-equation-infinite-domain" class="level3">
+<h3 class="anchored" data-anchor-id="d-wave-equation-infinite-domain">1D Wave Equation (Infinite Domain)</h3>
+<p><span class="math display">\[\frac{\partial^2 u}{\partial t^2} = c^2 \frac{\partial^2 u}{\partial x^2}\]</span></p>
+<p><strong>D’Alembert’s Solution:</strong></p>
+<p>The general solution can be written as: <span class="math display">\[u(x,t) = f(x + ct) + g(x - ct)\]</span></p>
+<p>where <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are determined by initial conditions: - <span class="math inline">\(u(x,0) = \phi(x)\)</span> (initial displacement) - <span class="math inline">\(\frac{\partial u}{\partial t}(x,0) = \psi(x)\)</span> (initial velocity)</p>
+<p><strong>Explicit Formula:</strong> <span class="math display">\[u(x,t) = \frac{\phi(x+ct) + \phi(x-ct)}{2} + \frac{1}{2c}\int_{x-ct}^{x+ct} \psi(\xi) d\xi\]</span></p>
+<hr>
+</section>
+</section>
+<section id="poisson-equation" class="level2">
+<h2 class="anchored" data-anchor-id="poisson-equation">Poisson Equation</h2>
+<p><span class="math display">\[\nabla^2 u = f(x,y)\]</span></p>
+<p>The Green’s function approach provides the fundamental solution <span class="math inline">\(G(x,y; x_0, y_0)\)</span> satisfying: <span class="math display">\[\nabla^2 G = \delta(x-x_0, y-y_0)\]</span></p>
+<p>For the 2D case: <span class="math display">\[G(x,y; x_0, y_0) = -\frac{1}{2\pi} \ln\sqrt{(x-x_0)^2 + (y-y_0)^2}\]</span></p>
+<hr>
+<p><em>More derivations coming soon…</em></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
