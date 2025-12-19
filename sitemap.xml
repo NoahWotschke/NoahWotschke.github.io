@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://NoahWotschke.github.io/math-viz.html</loc>
-    <lastmod>2025-12-18T01:53:08.280Z</lastmod>
+    <loc>https://NoahWotschke.github.io/projects.html</loc>
+    <lastmod>2025-12-19T07:18:10.659Z</lastmod>
   </url>
   <url>
     <loc>https://NoahWotschke.github.io/about.html</loc>
-    <lastmod>2025-12-17T20:36:18.919Z</lastmod>
+    <lastmod>2025-12-19T07:18:10.659Z</lastmod>
   </url>
   <url>
-    <loc>https://NoahWotschke.github.io/projects.html</loc>
-    <lastmod>2025-12-18T02:00:37.519Z</lastmod>
-  </url>
-  <url>
-    <loc>https://NoahWotschke.github.io/index.html</loc>
-    <lastmod>2025-12-17T20:36:18.919Z</lastmod>
+    <loc>https://NoahWotschke.github.io/projects/math-viz.html</loc>
+    <lastmod>2025-12-19T07:18:10.659Z</lastmod>
   </url>
   <url>
     <loc>https://NoahWotschke.github.io/extracurriculars.html</loc>
-    <lastmod>2025-12-18T01:53:21.809Z</lastmod>
+    <lastmod>2025-12-19T07:18:10.659Z</lastmod>
+  </url>
+  <url>
+    <loc>https://NoahWotschke.github.io/index.html</loc>
+    <lastmod>2025-12-19T07:18:10.659Z</lastmod>
+  </url>
+  <url>
+    <loc>https://NoahWotschke.github.io/math-viz.html</loc>
+    <lastmod>2025-12-19T07:18:10.659Z</lastmod>
   </url>
 </urlset>
