@@ -69,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -124,7 +95,7 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects/index.html"> 
+    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -159,8 +130,11 @@ window.Quarto = {
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
- <span class="menu-text">projects/index.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../projects/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../projects/math-viz.html" class="sidebar-item-text sidebar-link">
@@ -183,19 +157,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#heat-equation" id="toc-heat-equation" class="nav-link active" data-scroll-target="#heat-equation">Heat Equation</a>
-  <ul class="collapse">
-  <li><a href="#classical-solution-finite-domain" id="toc-classical-solution-finite-domain" class="nav-link" data-scroll-target="#classical-solution-finite-domain">Classical Solution (Finite Domain)</a></li>
-  </ul></li>
-  <li><a href="#laplace-equation" id="toc-laplace-equation" class="nav-link" data-scroll-target="#laplace-equation">Laplace Equation</a>
-  <ul class="collapse">
-  <li><a href="#cartesian-coordinates-rectangle" id="toc-cartesian-coordinates-rectangle" class="nav-link" data-scroll-target="#cartesian-coordinates-rectangle">Cartesian Coordinates (Rectangle)</a></li>
-  </ul></li>
-  <li><a href="#wave-equation" id="toc-wave-equation" class="nav-link" data-scroll-target="#wave-equation">Wave Equation</a>
-  <ul class="collapse">
-  <li><a href="#d-wave-equation-infinite-domain" id="toc-d-wave-equation-infinite-domain" class="nav-link" data-scroll-target="#d-wave-equation-infinite-domain">1D Wave Equation (Infinite Domain)</a></li>
-  </ul></li>
-  <li><a href="#poisson-equation" id="toc-poisson-equation" class="nav-link" data-scroll-target="#poisson-equation">Poisson Equation</a></li>
+  <li><a href="#heat-equation" id="toc-heat-equation" class="nav-link active" data-scroll-target="#heat-equation">Heat Equation</a></li>
   </ul>
 </nav>
     </div>
@@ -223,54 +185,6 @@ window.Quarto = {
 
 <section id="heat-equation" class="level2">
 <h2 class="anchored" data-anchor-id="heat-equation">Heat Equation</h2>
-<section id="classical-solution-finite-domain" class="level3">
-<h3 class="anchored" data-anchor-id="classical-solution-finite-domain">Classical Solution (Finite Domain)</h3>
-<p>The heat equation on a finite domain <span class="math inline">\([0, L]\)</span> with Dirichlet boundary conditions:</p>
-<p><span class="math display">\[\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}, \quad u(0,t) = u(L,t) = 0\]</span></p>
-<p><strong>Solution via Separation of Variables:</strong></p>
-<p>Assume <span class="math inline">\(u(x,t) = X(x)T(t)\)</span>. This leads to:</p>
-<p><span class="math display">\[\frac{1}{\alpha T}\frac{dT}{dt} = \frac{1}{X}\frac{d^2X}{dx^2} = -\lambda\]</span></p>
-<p>where <span class="math inline">\(\lambda\)</span> is the separation constant.</p>
-<p>The spatial problem becomes: <span class="math display">\[\frac{d^2X}{dx^2} + \lambda X = 0\]</span></p>
-<p>with eigenvalues <span class="math inline">\(\lambda_n = \left(\frac{n\pi}{L}\right)^2\)</span> and eigenfunctions <span class="math inline">\(X_n(x) = \sin\left(\frac{n\pi x}{L}\right)\)</span>.</p>
-<p>The temporal problem gives: <span class="math display">\[T_n(t) = e^{-\alpha \lambda_n t} = e^{-\alpha (n\pi/L)^2 t}\]</span></p>
-<p><strong>General Solution:</strong> <span class="math display">\[u(x,t) = \sum_{n=1}^{\infty} B_n \sin\left(\frac{n\pi x}{L}\right) e^{-\alpha (n\pi/L)^2 t}\]</span></p>
-<p>where coefficients <span class="math inline">\(B_n\)</span> are determined by the initial condition: <span class="math display">\[B_n = \frac{2}{L}\int_0^L u(x,0) \sin\left(\frac{n\pi x}{L}\right) dx\]</span></p>
-<hr>
-</section>
-</section>
-<section id="laplace-equation" class="level2">
-<h2 class="anchored" data-anchor-id="laplace-equation">Laplace Equation</h2>
-<section id="cartesian-coordinates-rectangle" class="level3">
-<h3 class="anchored" data-anchor-id="cartesian-coordinates-rectangle">Cartesian Coordinates (Rectangle)</h3>
-<p>The Laplace equation on a rectangle <span class="math inline">\([0,a] \times [0,b]\)</span> with Dirichlet boundary conditions:</p>
-<p><span class="math display">\[\nabla^2 u = \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0\]</span></p>
-<p><strong>Separation of Variables:</strong></p>
-<p>Assume <span class="math inline">\(u(x,y) = X(x)Y(y)\)</span>:</p>
-<p><span class="math display">\[\frac{1}{X}\frac{d^2X}{dx^2} + \frac{1}{Y}\frac{d^2Y}{dy^2} = 0\]</span></p>
-<p>This gives: <span class="math display">\[\frac{1}{X}\frac{d^2X}{dx^2} = -\lambda, \quad \frac{1}{Y}\frac{d^2Y}{dy^2} = \lambda\]</span></p>
-<hr>
-</section>
-</section>
-<section id="wave-equation" class="level2">
-<h2 class="anchored" data-anchor-id="wave-equation">Wave Equation</h2>
-<section id="d-wave-equation-infinite-domain" class="level3">
-<h3 class="anchored" data-anchor-id="d-wave-equation-infinite-domain">1D Wave Equation (Infinite Domain)</h3>
-<p><span class="math display">\[\frac{\partial^2 u}{\partial t^2} = c^2 \frac{\partial^2 u}{\partial x^2}\]</span></p>
-<p><strong>D’Alembert’s Solution:</strong></p>
-<p>The general solution can be written as: <span class="math display">\[u(x,t) = f(x + ct) + g(x - ct)\]</span></p>
-<p>where <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are determined by initial conditions: - <span class="math inline">\(u(x,0) = \phi(x)\)</span> (initial displacement) - <span class="math inline">\(\frac{\partial u}{\partial t}(x,0) = \psi(x)\)</span> (initial velocity)</p>
-<p><strong>Explicit Formula:</strong> <span class="math display">\[u(x,t) = \frac{\phi(x+ct) + \phi(x-ct)}{2} + \frac{1}{2c}\int_{x-ct}^{x+ct} \psi(\xi) d\xi\]</span></p>
-<hr>
-</section>
-</section>
-<section id="poisson-equation" class="level2">
-<h2 class="anchored" data-anchor-id="poisson-equation">Poisson Equation</h2>
-<p><span class="math display">\[\nabla^2 u = f(x,y)\]</span></p>
-<p>The Green’s function approach provides the fundamental solution <span class="math inline">\(G(x,y; x_0, y_0)\)</span> satisfying: <span class="math display">\[\nabla^2 G = \delta(x-x_0, y-y_0)\]</span></p>
-<p>For the 2D case: <span class="math display">\[G(x,y; x_0, y_0) = -\frac{1}{2\pi} \ln\sqrt{(x-x_0)^2 + (y-y_0)^2}\]</span></p>
-<hr>
-<p><em>More derivations coming soon…</em></p>
 
 
 </section>
