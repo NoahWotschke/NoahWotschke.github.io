@@ -1,0 +1,65 @@
+---
+title: "Math-Viz"
+---
+
+<img src="../Images/Math-Viz_PREVIEW.jpeg" alt="Math-Viz 3D Visualization" width="250" align="right" style="margin: 0 0 15px 15px; border-radius: 8px;">
+
+## PDE Visualization Framework
+
+A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.
+
+**Try it out:** [Live Web App](https://math-viz.streamlit.app){target="_blank"}
+
+**GitHub Repository:** [View on GitHub](https://github.com/NoahWotschke/Math-Viz){target="_blank"}
+
+### Overview
+
+Math-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.
+
+#### Supported PDEs
+
+```{mermaid}
+graph TD
+    PDE["PDE Classification"]
+    
+    PDE --> HEAT["Heat Equation<br/><i>Parabolic / Time-Dependent</i>"]
+    PDE --> LAPLACE["Laplace Equation<br/><i>Elliptic / Steady-State</i>"]
+    PDE --> POISSON["⚡ Poisson Equation<br/><i>Elliptic / Steady-State</i>"]
+    PDE --> WAVE["Wave Equation<br/><i>Hyperbolic / Time-Dependent</i>"]
+    
+    HEAT --> HEAT_FD["Finite Domain<br/>Bounded"]
+    HEAT --> HEAT_ID["Infinite Domain<br/>Unbounded"]
+    HEAT_ID --> HEAT_FT["Fourier Transform"]
+    HEAT_ID --> HEAT_HK["Heat Kernel"]
+    
+    LAPLACE --> LAP_CART["Cartesian Rectangle"]
+    LAPLACE --> LAP_POLAR["Polar Disk"]
+    LAP_CART --> LAP_CART_D["Dirichlet"]
+    LAP_CART --> LAP_CART_N["Neumann"]
+    LAP_POLAR --> LAP_POLAR_D["Dirichlet"]
+    LAP_POLAR --> LAP_POLAR_N["Neumann"]
+    
+    POISSON --> POISSON_D["Dirichlet"]
+    POISSON --> POISSON_N["Neumann"]
+    
+    WAVE --> WAVE_FD["Finite Domain<br/>Standing Waves"]
+    WAVE --> WAVE_ID["Infinite Domain<br/>Traveling Waves"]
+    WAVE_FD --> WAVE_FD_1D["1D String<br/>Sep. of Variables"]
+    WAVE_FD --> WAVE_FD_2D["2D Membrane<br/>Sep. of Vars"]
+    WAVE_ID --> WAVE_ID_1D["1D<br/>D'Alembert's Formula"]
+    WAVE_ID --> WAVE_ID_2D["2D<br/>Method of Descent"]
+    WAVE_ID --> WAVE_ID_3D["3D<br/>Kirchhoff's Formula"]
+    
+    style PDE fill:#1f407a,color:#fff
+    style HEAT fill:#ff6b6b,color:#fff
+    style LAPLACE fill:#4ecdc4,color:#fff
+    style POISSON fill:#ffe66d,color:#000
+    style WAVE fill:#95e1d3,color:#000
+```
+
+### Features
+
+- Real-time 3D rendering
+- PDE solving capabilities
+- Interactive parameter adjustment
+- Export functionality

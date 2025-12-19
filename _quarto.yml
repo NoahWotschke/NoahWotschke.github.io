@@ -7,14 +7,19 @@ website:
     background: "#1f407a"  # ETH Blue
     search: true
     left:
-      - href: index.qmd
+      - href: index.html
         text: Home
-      - href: projects.qmd
+      - href: projects/index.html
         text: Projects
-      - href: extracurriculars.qmd
+      - href: extracurriculars.html
         text: Activities
-      - href: about.qmd
+      - href: about.html
         text: About
+  sidebar:
+    - id: projects
+      contents:
+        - projects/index.qmd
+        - projects/math-viz.qmd
 
 format:
   html:

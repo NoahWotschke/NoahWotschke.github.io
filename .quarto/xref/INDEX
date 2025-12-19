@@ -4,5 +4,17 @@
   },
   "about.qmd": {
     "about.html": "bbddec04"
+  },
+  "projects.qmd": {
+    "projects.html": "db0f88d4"
+  },
+  "extracurriculars.qmd": {
+    "extracurriculars.html": "049ec869"
+  },
+  "math-viz.qmd": {
+    "math-viz.html": "9958a798"
+  },
+  "projects/math-viz.qmd": {
+    "math-viz.html": "f267a890"
   }
 }
