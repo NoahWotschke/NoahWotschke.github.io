@@ -1,16 +1,20 @@
 ---
-title: "Math-Viz"
+title: "Math-Viz: PDE Visualization Framework"
 ---
 
-<img src="../Images/Math-Viz_PREVIEW.jpeg" alt="Math-Viz 3D Visualization" width="250" align="right" style="margin: 0 0 15px 15px; border-radius: 8px;">
+**PDE Visualization Framework** - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.
 
-## PDE Visualization Framework
+### Quick Links
+- [GitHub Repository](https://github.com/NoahWotschke/Math-Viz){target="_blank"}
+- [Live Web App](https://math-viz.streamlit.app){target="_blank"}
 
-A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.
+### Current Features
 
-**Try it out:** [Live Web App](https://math-viz.streamlit.app){target="_blank"}
-
-**GitHub Repository:** [View on GitHub](https://github.com/NoahWotschke/Math-Viz){target="_blank"}
+- **Explicit Finite Difference Solver** with stability control
+- **Real-time 3D Visualization** & analytical reference comparison
+- **35+ Boundary Condition Functions**
+- **MP4 Export** for animations
+- **CLI + Web Interface**
 
 ### Overview
 
