@@ -20,6 +20,7 @@ website:
       contents:
         - projects/index.qmd
         - projects/math-viz.qmd
+        - projects/math-viz-derivations.qmd
 
 format:
   html:

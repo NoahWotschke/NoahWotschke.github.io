@@ -16,5 +16,8 @@
   },
   "projects/math-viz.qmd": {
     "math-viz.html": "f267a890"
+  },
+  "projects/math-viz-derivations.qmd": {
+    "math-viz-derivations.html": "02479339"
   }
 }
