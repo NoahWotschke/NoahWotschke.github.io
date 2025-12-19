@@ -18,43 +18,35 @@ Math-Viz provides an intuitive interface for exploring complex mathematical conc
 
 #### Supported PDEs
 
-```{mermaid}
-graph TD
-    PDE["PDE Classification"]
-    
-    PDE --> HEAT["Heat Equation<br/><i>Parabolic / Time-Dependent</i>"]
-    PDE --> LAPLACE["Laplace Equation<br/><i>Elliptic / Steady-State</i>"]
-    PDE --> POISSON["⚡ Poisson Equation<br/><i>Elliptic / Steady-State</i>"]
-    PDE --> WAVE["Wave Equation<br/><i>Hyperbolic / Time-Dependent</i>"]
-    
-    HEAT --> HEAT_FD["Finite Domain<br/>Bounded"]
-    HEAT --> HEAT_ID["Infinite Domain<br/>Unbounded"]
-    HEAT_ID --> HEAT_FT["Fourier Transform"]
-    HEAT_ID --> HEAT_HK["Heat Kernel"]
-    
-    LAPLACE --> LAP_CART["Cartesian Rectangle"]
-    LAPLACE --> LAP_POLAR["Polar Disk"]
-    LAP_CART --> LAP_CART_D["Dirichlet"]
-    LAP_CART --> LAP_CART_N["Neumann"]
-    LAP_POLAR --> LAP_POLAR_D["Dirichlet"]
-    LAP_POLAR --> LAP_POLAR_N["Neumann"]
-    
-    POISSON --> POISSON_D["Dirichlet"]
-    POISSON --> POISSON_N["Neumann"]
-    
-    WAVE --> WAVE_FD["Finite Domain<br/>Standing Waves"]
-    WAVE --> WAVE_ID["Infinite Domain<br/>Traveling Waves"]
-    WAVE_FD --> WAVE_FD_1D["1D String<br/>Sep. of Variables"]
-    WAVE_FD --> WAVE_FD_2D["2D Membrane<br/>Sep. of Vars"]
-    WAVE_ID --> WAVE_ID_1D["1D<br/>D'Alembert's Formula"]
-    WAVE_ID --> WAVE_ID_2D["2D<br/>Method of Descent"]
-    WAVE_ID --> WAVE_ID_3D["3D<br/>Kirchhoff's Formula"]
-    
-    style PDE fill:#1f407a,color:#fff
-    style HEAT fill:#ff6b6b,color:#fff
-    style LAPLACE fill:#4ecdc4,color:#fff
-    style POISSON fill:#ffe66d,color:#000
-    style WAVE fill:#95e1d3,color:#000
+```
+PDE Overview
+├── Heat Equation (Parabolic / Time-Dependent)
+│   ├── Finite Domain (Bounded)
+│   └── Infinite Domain (Unbounded)
+│       ├── Fourier Transform
+│       └── Heat Kernel (Fundamental Solution)
+│
+├── Laplace Equation (Elliptic / Steady-State)
+│   ├── Cartesian (Rectangle)
+│   │   ├── Dirichlet (Prescribed Value)
+│   │   └── Neumann (Prescribed Derivative)
+│   └── Polar (Disk)
+│       ├── Dirichlet
+│       └── Neumann
+│
+├── Poisson Equation (Elliptic / Steady-State)
+│   ├── Dirichlet
+│   └── Neumann
+│
+└── Wave Equation (Hyperbolic / Time-Dependent)
+    ├── Finite Domain (Standing Waves)
+    │   ├── 1D String (Separation of Variables)
+    │   └── 2D Membrane (Sep. of Vars in Polar/Rect)
+    │
+    └── Infinite Domain (Traveling Waves)
+        ├── 1D (D'Alembert's Formula)
+        ├── 2D (Method of Descent / Poisson)
+        └── 3D (Kirchhoff's Formula)
 ```
 
 ### Features
