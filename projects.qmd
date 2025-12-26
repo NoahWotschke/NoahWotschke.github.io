@@ -10,5 +10,5 @@ title: "Projects"
 
 **Try it out:** [Live Web App](https://math-viz.streamlit.app){target="_blank"}
 
-**Quick Links:** [GitHub](https://github.com/NoahWotschke/Math-Viz){target="_blank"} | [View Details](math-viz/index.html) | [Mathematical Derivations](math-viz/derivations.html)
+**Quick Links:** [GitHub](https://github.com/NoahWotschke/Math-Viz){target="_blank"} | [View Details](math-viz/index.html) | [Mathematical Derivations](pdes/index.html)
 
