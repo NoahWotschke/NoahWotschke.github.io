@@ -22,9 +22,7 @@ This project implements both analytical solutions (via Separation of Variables a
 ::: {.g-col-12 .g-col-md-6}
 ::: {.card style="text-align: center;"}
 #### [Heat Equation](pdes/heat/index.html)
-**Parabolic / Time-Dependent**
-
-Describes heat diffusion through space and time.
+**Describes heat diffusion through space and time.**
 
 Finite Domain (Bounded) \
 Infinite Domain (Unbounded)
@@ -34,9 +32,7 @@ Infinite Domain (Unbounded)
 ::: {.g-col-12 .g-col-md-6}
 ::: {.card style="text-align: center;"}
 #### [Laplace Equation](pdes/laplace/index.html)
-**Elliptic / Steady-State**
-
-Describes steady-state potential fields with no source.
+**Describes steady-state potential fields with no source.**
 
 Cartesian Coordinates \
 Polar Coordinates
@@ -46,9 +42,7 @@ Polar Coordinates
 ::: {.g-col-12 .g-col-md-6}
 ::: {.card style="text-align: center;"}
 #### [Poisson Equation](pdes/poisson/index.html)
-**Elliptic / Steady-State**
-
-Extends Laplace equation with a source term.
+**Extends Laplace equation with a source term.**
 
 Cartesian Basis with \
 Various Boundary Conditions
@@ -58,9 +52,7 @@ Various Boundary Conditions
 ::: {.g-col-12 .g-col-md-6}
 ::: {.card style="text-align: center;"}
 #### [Wave Equation](pdes/wave/index.html)
-**Hyperbolic / Time-Dependent**
-
-Describes wave propagation through space and time.
+**Describes wave propagation through space and time.**
 
 Standing Waves (Finite Domain) \
 Traveling Waves (Infinite Domain)
