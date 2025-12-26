@@ -1,0 +1,25 @@
+---
+title: "Heat Equation"
+---
+
+## Heat Equation (Parabolic / Time-Dependent)
+
+The heat equation is a fundamental parabolic partial differential equation that describes how heat diffuses through space over time.
+
+### Equation
+
+$$\frac{\partial u}{\partial t} = \alpha \nabla^2 u$$
+
+where $u(x,t)$ is temperature, $\alpha$ is thermal diffusivity, and $\nabla^2$ is the Laplacian operator.
+
+### Solutions
+
+This section covers various solutions to the heat equation:
+- Finite Domain (Bounded)
+- Infinite Domain (Unbounded)
+  - Fourier Transform
+  - Heat Kernel (Fundamental Solution)
+
+### Pages
+
+- [Derivations](derivations.html) - Full mathematical derivations and solution methods

@@ -1,0 +1,27 @@
+---
+title: "Heat Equation - Derivations"
+---
+
+## Heat Equation Derivations
+
+### Overview
+
+This page contains detailed mathematical derivations of heat equation solutions.
+
+### Finite Domain Solutions
+
+*Content to be added*
+
+### Infinite Domain Solutions
+
+#### Fourier Transform Method
+
+*Content to be added*
+
+#### Heat Kernel (Fundamental Solution)
+
+*Content to be added*
+
+### References
+
+*Add references as needed*

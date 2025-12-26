@@ -34,5 +34,29 @@
   },
   "math-viz/derivations.qmd": {
     "derivations.html": "6b1471b6"
+  },
+  "math-viz/pdes/heat/index.qmd": {
+    "index.html": "c3e0b493"
+  },
+  "math-viz/pdes/heat/derivations.qmd": {
+    "derivations.html": "3c874b84"
+  },
+  "math-viz/pdes/laplace/index.qmd": {
+    "index.html": "1f909cd7"
+  },
+  "math-viz/pdes/laplace/derivations.qmd": {
+    "derivations.html": "c728c4fa"
+  },
+  "math-viz/pdes/poisson/index.qmd": {
+    "index.html": "971e9936"
+  },
+  "math-viz/pdes/poisson/derivations.qmd": {
+    "derivations.html": "df7b0b60"
+  },
+  "math-viz/pdes/wave/index.qmd": {
+    "index.html": "b390c954"
+  },
+  "math-viz/pdes/wave/derivations.qmd": {
+    "derivations.html": "4af4c9da"
   }
 }

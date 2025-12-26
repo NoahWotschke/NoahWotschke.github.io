@@ -1,0 +1,23 @@
+---
+title: "Poisson Equation"
+---
+
+## Poisson Equation (Elliptic / Steady-State)
+
+The Poisson equation is an elliptic PDE that extends the Laplace equation to include a source term.
+
+### Equation
+
+$$\nabla^2 u = f$$
+
+where $u$ is a potential function, $f$ is a source term, and $\nabla^2$ is the Laplacian operator.
+
+### Solutions
+
+This section covers various solutions to the Poisson equation:
+- Dirichlet Boundary Conditions (Prescribed Value)
+- Neumann Boundary Conditions (Prescribed Derivative)
+
+### Pages
+
+- [Derivations](derivations.html) - Full mathematical derivations and solution methods

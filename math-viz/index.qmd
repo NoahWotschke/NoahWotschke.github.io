@@ -8,54 +8,35 @@ title: "Math-Viz: PDE Visualization Framework"
 - [GitHub Repository](https://github.com/NoahWotschke/Math-Viz){target="_blank"}
 - [Live Web App](https://math-viz.streamlit.app){target="_blank"}
 
-### Current Features
-
-- **Explicit Finite Difference Solver** with stability control
-- **Real-time 3D Visualization** & analytical reference comparison
-- **35+ Boundary Condition Functions**
-- **MP4 Export** for animations
-- **CLI + Web Interface**
-
 ### Overview
 
 Math-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.
 
 #### Supported PDEs
 
-```
-PDE Overview
-├── Heat Equation (Parabolic / Time-Dependent)
-│   ├── Finite Domain (Bounded)
-│   └── Infinite Domain (Unbounded)
-│       ├── Fourier Transform
-│       └── Heat Kernel (Fundamental Solution)
-│
-├── Laplace Equation (Elliptic / Steady-State)
-│   ├── Cartesian (Rectangle)
-│   │   ├── Dirichlet (Prescribed Value)
-│   │   └── Neumann (Prescribed Derivative)
-│   └── Polar (Disk)
-│       ├── Dirichlet
-│       └── Neumann
-│
-├── Poisson Equation (Elliptic / Steady-State)
-│   ├── Dirichlet
-│   └── Neumann
-│
-└── Wave Equation (Hyperbolic / Time-Dependent)
-    ├── Finite Domain (Standing Waves)
-    │   ├── 1D String (Separation of Variables)
-    │   └── 2D Membrane (Sep. of Vars in Polar/Rect)
-    │
-    └── Infinite Domain (Traveling Waves)
-        ├── 1D (D'Alembert's Formula)
-        ├── 2D (Method of Descent / Poisson)
-        └── 3D (Kirchhoff's Formula)
-```
+- [**Heat Equation**](pdes/heat/index.html) (Parabolic / Time-Dependent)
+  - Finite Domain (Bounded)
+  - Infinite Domain (Unbounded)
+    - Fourier Transform
+    - Heat Kernel (Fundamental Solution)
 
-### Features
+- [**Laplace Equation**](pdes/laplace/index.html) (Elliptic / Steady-State)
+  - Cartesian (Rectangle)
+    - Dirichlet (Prescribed Value)
+    - Neumann (Prescribed Derivative)
+  - Polar (Disk)
+    - Dirichlet
+    - Neumann
 
-- Real-time 3D rendering
-- PDE solving capabilities
-- Interactive parameter adjustment
-- Export functionality
+- [**Poisson Equation**](pdes/poisson/index.html) (Elliptic / Steady-State)
+  - Dirichlet Boundary Conditions
+  - Neumann Boundary Conditions
+
+- [**Wave Equation**](pdes/wave/index.html) (Hyperbolic / Time-Dependent)
+  - Finite Domain (Standing Waves)
+    - 1D String (Separation of Variables)
+    - 2D Membrane (Sep. of Vars in Polar/Rect)
+  - Infinite Domain (Traveling Waves)
+    - 1D (D'Alembert's Formula)
+    - 2D (Method of Descent / Poisson)
+    - 3D (Kirchhoff's Formula)

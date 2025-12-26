@@ -1,0 +1,27 @@
+---
+title: "Laplace Equation"
+---
+
+## Laplace Equation (Elliptic / Steady-State)
+
+The Laplace equation is an elliptic PDE that describes steady-state phenomena with no time dependence.
+
+### Equation
+
+$$\nabla^2 u = 0$$
+
+where $u$ is a potential function and $\nabla^2$ is the Laplacian operator.
+
+### Solutions
+
+This section covers various solutions to the Laplace equation:
+- Cartesian Coordinates (Rectangle)
+  - Dirichlet (Prescribed Value)
+  - Neumann (Prescribed Derivative)
+- Polar Coordinates (Disk)
+  - Dirichlet
+  - Neumann
+
+### Pages
+
+- [Derivations](derivations.html) - Full mathematical derivations and solution methods

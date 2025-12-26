@@ -1,0 +1,28 @@
+---
+title: "Wave Equation"
+---
+
+## Wave Equation (Hyperbolic / Time-Dependent)
+
+The wave equation is a hyperbolic PDE that describes the propagation of waves through space.
+
+### Equation
+
+$$\frac{\partial^2 u}{\partial t^2} = c^2 \nabla^2 u$$
+
+where $u$ is displacement, $c$ is wave speed, and $\nabla^2$ is the Laplacian operator.
+
+### Solutions
+
+This section covers various solutions to the wave equation:
+- Finite Domain (Standing Waves)
+  - 1D String (Separation of Variables)
+  - 2D Membrane (Separation of Variables in Polar/Cartesian)
+- Infinite Domain (Traveling Waves)
+  - 1D (D'Alembert's Formula)
+  - 2D (Method of Descent / Poisson)
+  - 3D (Kirchhoff's Formula)
+
+### Pages
+
+- [Derivations](derivations.html) - Full mathematical derivations and solution methods

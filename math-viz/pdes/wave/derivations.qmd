@@ -1,0 +1,37 @@
+---
+title: "Wave Equation - Derivations"
+---
+
+## Wave Equation Derivations
+
+### Overview
+
+This page contains detailed mathematical derivations of wave equation solutions.
+
+### Finite Domain - Standing Waves
+
+#### 1D String (Separation of Variables)
+
+*Content to be added*
+
+#### 2D Membrane (Separation of Variables)
+
+*Content to be added*
+
+### Infinite Domain - Traveling Waves
+
+#### 1D (D'Alembert's Formula)
+
+*Content to be added*
+
+#### 2D (Method of Descent / Poisson)
+
+*Content to be added*
+
+#### 3D (Kirchhoff's Formula)
+
+*Content to be added*
+
+### References
+
+*Add references as needed*

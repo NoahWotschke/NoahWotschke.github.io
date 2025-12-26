@@ -1,0 +1,33 @@
+---
+title: "Laplace Equation - Derivations"
+---
+
+## Laplace Equation Derivations
+
+### Overview
+
+This page contains detailed mathematical derivations of Laplace equation solutions.
+
+### Cartesian Coordinates
+
+#### Dirichlet Boundary Conditions
+
+*Content to be added*
+
+#### Neumann Boundary Conditions
+
+*Content to be added*
+
+### Polar Coordinates
+
+#### Dirichlet Boundary Conditions
+
+*Content to be added*
+
+#### Neumann Boundary Conditions
+
+*Content to be added*
+
+### References
+
+*Add references as needed*
