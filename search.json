@@ -63,18 +63,53 @@
     "text": "The wave equation is a hyperbolic PDE that describes the propagation of waves through space.\n\n\n\\[\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\nabla^2 u\\]\nwhere \\(u\\) is displacement, \\(c\\) is wave speed, and \\(\\nabla^2\\) is the Laplacian operator.\n\n\n\nThis section covers various solutions to the wave equation: - Finite Domain (Standing Waves) - 1D String (Separation of Variables) - 2D Membrane (Separation of Variables in Polar/Cartesian) - Infinite Domain (Traveling Waves) - 1D (D’Alembert’s Formula) - 2D (Method of Descent / Poisson) - 3D (Kirchhoff’s Formula)\n\n\n\n\nDerivations - Full mathematical derivations and solution methods"
   },
   {
-    "objectID": "math-viz/index.html",
-    "href": "math-viz/index.html",
-    "title": "Math-Viz: PDE Visualization Framework",
+    "objectID": "math-viz/technical/web-app/index.html",
+    "href": "math-viz/technical/web-app/index.html",
+    "title": "Web Application",
     "section": "",
-    "text": "PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\n\nQuick Links\n\nGitHub Repository\nLive Web App\n\n\n\nOverview\nMath-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.\n\nSupported PDEs\n\nHeat Equation (Parabolic / Time-Dependent)\n\nFinite Domain (Bounded)\nInfinite Domain (Unbounded)\n\nFourier Transform\nHeat Kernel (Fundamental Solution)\n\n\nLaplace Equation (Elliptic / Steady-State)\n\nCartesian (Rectangle)\n\nDirichlet (Prescribed Value)\nNeumann (Prescribed Derivative)\n\nPolar (Disk)\n\nDirichlet\nNeumann\n\n\nPoisson Equation (Elliptic / Steady-State)\n\nDirichlet Boundary Conditions\nNeumann Boundary Conditions\n\nWave Equation (Hyperbolic / Time-Dependent)\n\nFinite Domain (Standing Waves)\n\n1D String (Separation of Variables)\n2D Membrane (Sep. of Vars in Polar/Rect)\n\nInfinite Domain (Traveling Waves)\n\n1D (D’Alembert’s Formula)\n2D (Method of Descent / Poisson)\n3D (Kirchhoff’s Formula)"
+    "text": "Guide to using the interactive Math-Viz web application.\n\n\nContent to be added\nThe web application provides an intuitive interface for: - Selecting PDEs and methods - Adjusting parameters - Visualizing solutions in real-time - Exporting results\n\n\n\nContent to be added\n\nReal-time 3D visualization\nInteractive parameter controls\nSolution animation\nResult export\n\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nAdd references as needed"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "math-viz/technical/web-app/index.html#web-application-documentation",
+    "href": "math-viz/technical/web-app/index.html#web-application-documentation",
+    "title": "Web Application",
     "section": "",
-    "text": "About this site"
+    "text": "Guide to using the interactive Math-Viz web application.\n\n\nContent to be added\nThe web application provides an intuitive interface for: - Selecting PDEs and methods - Adjusting parameters - Visualizing solutions in real-time - Exporting results\n\n\n\nContent to be added\n\nReal-time 3D visualization\nInteractive parameter controls\nSolution animation\nResult export\n\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nAdd references as needed"
+  },
+  {
+    "objectID": "math-viz/technical/cli/index.html",
+    "href": "math-viz/technical/cli/index.html",
+    "title": "CLI Guide",
+    "section": "",
+    "text": "Guide to using the Math-Viz command-line interface for solving PDEs.\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\nSolution data export\nVisualization formats\nAnimation generation\n\n\n\n\nContent to be added\n\n\n\nAdd references as needed"
+  },
+  {
+    "objectID": "math-viz/technical/cli/index.html#command-line-interface-guide",
+    "href": "math-viz/technical/cli/index.html#command-line-interface-guide",
+    "title": "CLI Guide",
+    "section": "",
+    "text": "Guide to using the Math-Viz command-line interface for solving PDEs.\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\nSolution data export\nVisualization formats\nAnimation generation\n\n\n\n\nContent to be added\n\n\n\nAdd references as needed"
+  },
+  {
+    "objectID": "math-viz/technical/api/index.html",
+    "href": "math-viz/technical/api/index.html",
+    "title": "API Documentation",
+    "section": "",
+    "text": "Complete reference for the Math-Viz Python API.\n\n\nContent to be added\n\nHeatSolver\nLaplaceSolver\nPoissonSolver\nWaveSolver\n\n\n\n\nContent to be added\n\nDirichlet conditions\nNeumann conditions\nPeriodic conditions\n\n\n\n\nContent to be added\n\n3D plotting\nAnimation generation\nResult comparison\n\n\n\n\nContent to be added\n\nSolver parameters\nGrid settings\nOutput options\n\n\n\n\nContent to be added\n\n\n\nAdd references as needed"
+  },
+  {
+    "objectID": "math-viz/technical/api/index.html#api-documentation",
+    "href": "math-viz/technical/api/index.html#api-documentation",
+    "title": "API Documentation",
+    "section": "",
+    "text": "Complete reference for the Math-Viz Python API.\n\n\nContent to be added\n\nHeatSolver\nLaplaceSolver\nPoissonSolver\nWaveSolver\n\n\n\n\nContent to be added\n\nDirichlet conditions\nNeumann conditions\nPeriodic conditions\n\n\n\n\nContent to be added\n\n3D plotting\nAnimation generation\nResult comparison\n\n\n\n\nContent to be added\n\nSolver parameters\nGrid settings\nOutput options\n\n\n\n\nContent to be added\n\n\n\nAdd references as needed"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Noah Wotscke | Mechanical Engineering",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "extracurriculars.html",
@@ -84,11 +119,60 @@
     "text": "Coming soon! Add your activities and extracurricular involvement here."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Noah Wotscke | Mechanical Engineering",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "About this site"
+  },
+  {
+    "objectID": "math-viz/index.html",
+    "href": "math-viz/index.html",
+    "title": "Math-Viz: PDE Visualization Framework",
+    "section": "",
+    "text": "PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\n\nQuick Links\n\nGitHub Repository\nLive Web App\nPDE Solutions & Derivations\nTechnical Documentation\n\n\n\nOverview\nMath-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.\n\nSupported PDEs\n\nHeat Equation (Parabolic / Time-Dependent)\n\nFinite Domain (Bounded)\nInfinite Domain (Unbounded)\n\nFourier Transform\nHeat Kernel (Fundamental Solution)\n\n\nLaplace Equation (Elliptic / Steady-State)\n\nCartesian (Rectangle)\n\nDirichlet (Prescribed Value)\nNeumann (Prescribed Derivative)\n\nPolar (Disk)\n\nDirichlet\nNeumann\n\n\nPoisson Equation (Elliptic / Steady-State)\n\nDirichlet Boundary Conditions\nNeumann Boundary Conditions\n\nWave Equation (Hyperbolic / Time-Dependent)\n\nFinite Domain (Standing Waves)\n\n1D String (Separation of Variables)\n2D Membrane (Sep. of Vars in Polar/Rect)\n\nInfinite Domain (Traveling Waves)\n\n1D (D’Alembert’s Formula)\n2D (Method of Descent / Poisson)\n3D (Kirchhoff’s Formula)"
+  },
+  {
+    "objectID": "math-viz/technical/index.html",
+    "href": "math-viz/technical/index.html",
+    "title": "Technical Documentation",
+    "section": "",
+    "text": "Comprehensive documentation for the Math-Viz framework architecture, implementation details, and usage guides.\n\n\nThis section covers the technical implementation of Math-Viz, including: - Numerical solution methods - API and interfaces - Command-line tools - Web application architecture"
+  },
+  {
+    "objectID": "math-viz/technical/index.html#technical-documentation",
+    "href": "math-viz/technical/index.html#technical-documentation",
+    "title": "Technical Documentation",
+    "section": "",
+    "text": "Comprehensive documentation for the Math-Viz framework architecture, implementation details, and usage guides.\n\n\nThis section covers the technical implementation of Math-Viz, including: - Numerical solution methods - API and interfaces - Command-line tools - Web application architecture"
+  },
+  {
+    "objectID": "math-viz/technical/index.html#core-components",
+    "href": "math-viz/technical/index.html#core-components",
+    "title": "Technical Documentation",
+    "section": "Core Components",
+    "text": "Core Components\n\nNumerical Methods\nDocumentation of the numerical solvers and discretization techniques used in Math-Viz.\n\nExplicit Finite Difference Method\nStability analysis and CFL conditions\nGrid generation and boundary handling\nPerformance optimization\n\nView Numerical Methods →\n\n\n\nAPI Documentation\nComplete reference for the Math-Viz Python API.\n\nCore solver classes\nSolution interfaces\nVisualization utilities\nConfiguration options\n\nView API Documentation →\n\n\n\nCLI Guide\nGuide to using the Math-Viz command-line interface.\n\nInstallation and setup\nBasic usage examples\nAdvanced options\nOutput formats and export\n\nView CLI Guide →\n\n\n\nWeb Application\nDocumentation for the interactive web interface.\n\nFeatures and interface\nParameter selection\nReal-time visualization\nResult export\n\nView Web Application →"
+  },
+  {
+    "objectID": "math-viz/technical/index.html#quick-links",
+    "href": "math-viz/technical/index.html#quick-links",
+    "title": "Technical Documentation",
+    "section": "Quick Links",
+    "text": "Quick Links\n\nGitHub Repository\nLive Web App"
+  },
+  {
+    "objectID": "math-viz/technical/numerical-methods/index.html",
+    "href": "math-viz/technical/numerical-methods/index.html",
+    "title": "Numerical Methods",
+    "section": "",
+    "text": "Detailed documentation of the numerical solution techniques and computational methods used in Math-Viz.\n\n\nContent to be added\n\nDiscretization approach\nImplementation details\nAccuracy and convergence\n\n\n\n\nContent to be added\n\nCFL (Courant-Friedrichs-Lewy) condition\nVon Neumann stability analysis\nPractical stability limits\n\n\n\n\nContent to be added\n\nSpatial discretization\nTemporal discretization\nBoundary handling\n\n\n\n\nContent to be added\n\nComputational complexity\nMemory efficiency\nVectorization techniques\n\n\n\n\nAdd references as needed"
+  },
+  {
+    "objectID": "math-viz/technical/numerical-methods/index.html#numerical-methods",
+    "href": "math-viz/technical/numerical-methods/index.html#numerical-methods",
+    "title": "Numerical Methods",
+    "section": "",
+    "text": "Detailed documentation of the numerical solution techniques and computational methods used in Math-Viz.\n\n\nContent to be added\n\nDiscretization approach\nImplementation details\nAccuracy and convergence\n\n\n\n\nContent to be added\n\nCFL (Courant-Friedrichs-Lewy) condition\nVon Neumann stability analysis\nPractical stability limits\n\n\n\n\nContent to be added\n\nSpatial discretization\nTemporal discretization\nBoundary handling\n\n\n\n\nContent to be added\n\nComputational complexity\nMemory efficiency\nVectorization techniques\n\n\n\n\nAdd references as needed"
   },
   {
     "objectID": "math-viz/pdes/wave/derivations.html",
