@@ -26,7 +26,5 @@ This website acts as a personal archive of my work in engineering and mathematic
 ### Explore
 
 - **[Projects](projects.html)** - Complete portfolio of engineering and technical projects
-- **[Extracurriculars](extracurriculars.html)** - Involvement and activities
-- **[About](about.html)** - More about me as a student
-
-
+- **[Extracurriculars](about/extracurriculars.html)** - Involvement and activities
+- **[About](about/index.html)** - More about me as a student

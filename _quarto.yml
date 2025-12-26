@@ -14,6 +14,37 @@ website:
       - href: about/index.html
         text: About
 
+  sidebar:
+    - id: about-sidebar
+      title: "About"
+      style: "docked"
+      align: left
+      contents:
+        - text: "About Me"
+          href: about/index.html
+        - text: "Extracurricular Activities"
+          href: about/extracurriculars.html
+        - text: "CV / Resume"
+          href: about/cv.html
+    
+    - id: mathviz-sidebar
+      title: "Math-Viz"
+      style: "docked"
+      align: left
+      contents:
+        - text: "Overview"
+          href: math-viz/index.html
+        - text: "PDE Solutions & Derivations"
+          href: math-viz/pdes/index.html
+        - text: "Technical Documentation"
+          href: math-viz/technical/index.html
+        - section: "Resources"
+          contents:
+            - text: "GitHub Repository"
+              href: https://github.com/NoahWotschke/Math-Viz
+            - text: "Live Web App"
+              href: https://math-viz.streamlit.app
+
 format:
   html:
     theme: cosmo

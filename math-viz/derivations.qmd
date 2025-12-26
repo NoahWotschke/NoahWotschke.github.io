@@ -1,5 +1,0 @@
----
-title: "Mathematical Derivations"
----
-
-## Heat Equation

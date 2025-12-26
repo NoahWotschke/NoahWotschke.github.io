@@ -10,12 +10,6 @@ title: "Math-Viz: PDE Visualization Framework"
 Math-Viz is currently under active development. Suggestions, corrections, and feedback are welcome! Please send any comments or improvements to [noah.wotschke@student.ethz.ch](mailto:noah.wotschke@student.ethz.ch).
 :::
 
-### Quick Links
-- [GitHub Repository](https://github.com/NoahWotschke/Math-Viz){target="_blank"}
-- [Live Web App](https://math-viz.streamlit.app){target="_blank"}
-- [PDE Solutions & Derivations](pdes/index.html)
-- [Technical Documentation](technical/index.html)
-
 ### Overview
 
 Math-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.

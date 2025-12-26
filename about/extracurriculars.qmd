@@ -5,5 +5,3 @@ title: "Extracurricular Activities"
 ## Extracurricular Activities
 
 Coming soon! Add your activities and extracurricular involvement here.
-
-[← Back to About](index.html)
