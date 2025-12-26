@@ -112,6 +112,13 @@
     "text": "PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\n\nQuick Links\n\nGitHub Repository\nLive Web App\nPDE Solutions & Derivations\nTechnical Documentation\n\n\n\nOverview\nMath-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.\n\nSupported PDEs\n\nHeat Equation (Parabolic / Time-Dependent)\n\nFinite Domain (Bounded)\nInfinite Domain (Unbounded)\n\nFourier Transform\nHeat Kernel (Fundamental Solution)\n\n\nLaplace Equation (Elliptic / Steady-State)\n\nCartesian (Rectangle)\n\nDirichlet (Prescribed Value)\nNeumann (Prescribed Derivative)\n\nPolar (Disk)\n\nDirichlet\nNeumann\n\n\nPoisson Equation (Elliptic / Steady-State)\n\nDirichlet Boundary Conditions\nNeumann Boundary Conditions\n\nWave Equation (Hyperbolic / Time-Dependent)\n\nFinite Domain (Standing Waves)\n\n1D String (Separation of Variables)\n2D Membrane (Sep. of Vars in Polar/Rect)\n\nInfinite Domain (Traveling Waves)\n\n1D (D’Alembert’s Formula)\n2D (Method of Descent / Poisson)\n3D (Kirchhoff’s Formula)"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Noah Wotschke",
+    "section": "",
+    "text": "Second-year Mechanical Engineering Student | ETH Zurich\nThis website acts as a personal archive of my work in engineering and mathematics. I use this space to document my projects—from academic research to private coding experiments. My goal is to capture the learning process and showcase the underlying logic of the systems I study.\n\n\nFeatured Work\nMath-Viz: PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering. Includes detailed mathematical derivations and numerical solution methods for heat, Laplace, Poisson, and wave equations.\n\n\nExplore\n\nProjects - Complete portfolio of engineering and technical projects\nExtracurriculars - Involvement and activities\nAbout - More about me and my interests\n\nFor a more detailed view of my background and interests, please visit the About section."
+  },
+  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",

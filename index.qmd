@@ -14,8 +14,6 @@ about:
       href: about.html
 ---
 
-::: {.content-visible when-profile="default"}
-
 ::: {style="max-width: 800px; margin: 0 auto; text-align: center;"}
 
 **Second-year Mechanical Engineering Student | ETH Zurich**
@@ -41,8 +39,6 @@ This website acts as a personal archive of my work in engineering and mathematic
 - **[About](about.html)** - More about me and my interests
 
 For a more detailed view of my background and interests, please visit the [About section](about.html).
-
-:::
 
 :::
 
