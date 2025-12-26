@@ -1,11 +1,11 @@
 ---
 title: "Noah Wotschke"
 about:
-  template: jolla
+  template: solana
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com/in/noahwotschke
+      href: www.linkedin.com/in/noah-lorys-wotschke
     - icon: github
       text: Github
       href: https://github.com/NoahWotschke
@@ -14,23 +14,13 @@ about:
       href: about.html
 ---
 
-::: {style="max-width: 800px; margin: 0 auto; text-align: center;"}
-
 **Second-year Mechanical Engineering Student | ETH Zurich**
 
 This website acts as a personal archive of my work in engineering and mathematics. I use this space to document my projects—from academic research to private coding experiments. My goal is to capture the learning process and showcase the underlying logic of the systems I study.
 
-:::
-
-::: {style="max-width: 800px; margin: 3rem auto;"}
-
 ### Featured Work
 
 **[Math-Viz: PDE Visualization Framework](math-viz/index.html)** - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering. Includes detailed mathematical derivations and numerical solution methods for heat, Laplace, Poisson, and wave equations.
-
-:::
-
-::: {style="max-width: 800px; margin: 3rem auto;"}
 
 ### Explore
 
@@ -39,7 +29,5 @@ This website acts as a personal archive of my work in engineering and mathematic
 - **[About](about.html)** - More about me and my interests
 
 For a more detailed view of my background and interests, please visit the [About section](about.html).
-
-:::
 
 
