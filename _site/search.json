@@ -109,14 +109,7 @@
     "href": "math-viz/index.html",
     "title": "Math-Viz: PDE Visualization Framework",
     "section": "",
-    "text": "PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering."
-  },
-  {
-    "objectID": "math-viz/index.html#project-status-in-development",
-    "href": "math-viz/index.html#project-status-in-development",
-    "title": "Math-Viz: PDE Visualization Framework",
-    "section": "Project Status: In Development",
-    "text": "Project Status: In Development\nMath-Viz is currently under active development. Suggestions, corrections, and feedback are welcome! Please send any comments or improvements to noah.wotschke@student.ethz.ch."
+    "text": "PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\n\n\n\n\n\n\nNoteProject Status still in Development !\n\n\n\nMath-Viz is currently under active development. Suggestions, corrections, and feedback are welcome! Please send any comments or improvements to noah.wotschke@student.ethz.ch.\n\n\n\nQuick Links\n\nGitHub Repository\nLive Web App\nPDE Solutions & Derivations\nTechnical Documentation\n\n\n\nOverview\nMath-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.\n\nSupported PDEs\n\nHeat Equation (Parabolic / Time-Dependent)\n\nFinite Domain (Bounded)\nInfinite Domain (Unbounded)\n\nFourier Transform\nHeat Kernel (Fundamental Solution)\n\n\nLaplace Equation (Elliptic / Steady-State)\n\nCartesian (Rectangle)\n\nDirichlet (Prescribed Value)\nNeumann (Prescribed Derivative)\n\nPolar (Disk)\n\nDirichlet\nNeumann\n\n\nPoisson Equation (Elliptic / Steady-State)\n\nDirichlet Boundary Conditions\nNeumann Boundary Conditions\n\nWave Equation (Hyperbolic / Time-Dependent)\n\nFinite Domain (Standing Waves)\n\n1D String (Separation of Variables)\n2D Membrane (Sep. of Vars in Polar/Rect)\n\nInfinite Domain (Traveling Waves)\n\n1D (D’Alembert’s Formula)\n2D (Method of Descent / Poisson)\n3D (Kirchhoff’s Formula)"
   },
   {
     "objectID": "index.html",
