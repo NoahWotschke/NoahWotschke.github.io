@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Math-Viz: PDE Visualization Framework – Noah Wotschke | Mechanical Engineering</title>
+<title>Wave Equation – Noah Wotschke | Mechanical Engineering</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-350d22a2bc72c49d8b17de5882d8d61c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-350d22a2bc72c49d8b17de5882d8d61c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,8 +69,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Noah Wotschke | Mechanical Engineering</span>
     </a>
   </div>
@@ -91,19 +120,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link" href="../../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../extracurriculars.html"> 
+    <a class="nav-link" href="../../../extracurriculars.html"> 
 <span class="menu-text">Activities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -122,8 +151,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quick-links" id="toc-quick-links" class="nav-link active" data-scroll-target="#quick-links">Quick Links</a></li>
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#wave-equation-hyperbolic-time-dependent" id="toc-wave-equation-hyperbolic-time-dependent" class="nav-link active" data-scroll-target="#wave-equation-hyperbolic-time-dependent">Wave Equation (Hyperbolic / Time-Dependent)</a>
+  <ul class="collapse">
+  <li><a href="#equation" id="toc-equation" class="nav-link" data-scroll-target="#equation">Equation</a></li>
+  <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions">Solutions</a></li>
+  <li><a href="#pages" id="toc-pages" class="nav-link" data-scroll-target="#pages">Pages</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -132,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Math-Viz: PDE Visualization Framework</h1>
+<h1 class="title">Wave Equation</h1>
 </div>
 
 
@@ -149,61 +182,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>PDE Visualization Framework</strong> - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.</p>
-<section id="quick-links" class="level3">
-<h3 class="anchored" data-anchor-id="quick-links">Quick Links</h3>
-<ul>
-<li><a href="https://github.com/NoahWotschke/Math-Viz" target="_blank">GitHub Repository</a></li>
-<li><a href="https://math-viz.streamlit.app" target="_blank">Live Web App</a></li>
-</ul>
+<section id="wave-equation-hyperbolic-time-dependent" class="level2">
+<h2 class="anchored" data-anchor-id="wave-equation-hyperbolic-time-dependent">Wave Equation (Hyperbolic / Time-Dependent)</h2>
+<p>The wave equation is a hyperbolic PDE that describes the propagation of waves through space.</p>
+<section id="equation" class="level3">
+<h3 class="anchored" data-anchor-id="equation">Equation</h3>
+<p><span class="math display">\[\frac{\partial^2 u}{\partial t^2} = c^2 \nabla^2 u\]</span></p>
+<p>where <span class="math inline">\(u\)</span> is displacement, <span class="math inline">\(c\)</span> is wave speed, and <span class="math inline">\(\nabla^2\)</span> is the Laplacian operator.</p>
 </section>
-<section id="overview" class="level3">
-<h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>Math-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.</p>
-<section id="supported-pdes" class="level4">
-<h4 class="anchored" data-anchor-id="supported-pdes">Supported PDEs</h4>
+<section id="solutions" class="level3">
+<h3 class="anchored" data-anchor-id="solutions">Solutions</h3>
+<p>This section covers various solutions to the wave equation: - Finite Domain (Standing Waves) - 1D String (Separation of Variables) - 2D Membrane (Separation of Variables in Polar/Cartesian) - Infinite Domain (Traveling Waves) - 1D (D’Alembert’s Formula) - 2D (Method of Descent / Poisson) - 3D (Kirchhoff’s Formula)</p>
+</section>
+<section id="pages" class="level3">
+<h3 class="anchored" data-anchor-id="pages">Pages</h3>
 <ul>
-<li><a href="pdes/heat/index.html"><strong>Heat Equation</strong></a> (Parabolic / Time-Dependent)
-<ul>
-<li>Finite Domain (Bounded)</li>
-<li>Infinite Domain (Unbounded)
-<ul>
-<li>Fourier Transform</li>
-<li>Heat Kernel (Fundamental Solution)</li>
-</ul></li>
-</ul></li>
-<li><a href="pdes/laplace/index.html"><strong>Laplace Equation</strong></a> (Elliptic / Steady-State)
-<ul>
-<li>Cartesian (Rectangle)
-<ul>
-<li>Dirichlet (Prescribed Value)</li>
-<li>Neumann (Prescribed Derivative)</li>
-</ul></li>
-<li>Polar (Disk)
-<ul>
-<li>Dirichlet</li>
-<li>Neumann</li>
-</ul></li>
-</ul></li>
-<li><a href="pdes/poisson/index.html"><strong>Poisson Equation</strong></a> (Elliptic / Steady-State)
-<ul>
-<li>Dirichlet Boundary Conditions</li>
-<li>Neumann Boundary Conditions</li>
-</ul></li>
-<li><a href="pdes/wave/index.html"><strong>Wave Equation</strong></a> (Hyperbolic / Time-Dependent)
-<ul>
-<li>Finite Domain (Standing Waves)
-<ul>
-<li>1D String (Separation of Variables)</li>
-<li>2D Membrane (Sep.&nbsp;of Vars in Polar/Rect)</li>
-</ul></li>
-<li>Infinite Domain (Traveling Waves)
-<ul>
-<li>1D (D’Alembert’s Formula)</li>
-<li>2D (Method of Descent / Poisson)</li>
-<li>3D (Kirchhoff’s Formula)</li>
-</ul></li>
-</ul></li>
+<li><a href="derivations.html">Derivations</a> - Full mathematical derivations and solution methods</li>
 </ul>
 
 

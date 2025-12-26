@@ -7,6 +7,62 @@
     "text": "Math-Viz\nPDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\nTry it out: Live Web App\nQuick Links: GitHub | View Details | Mathematical Derivations"
   },
   {
+    "objectID": "math-viz/pdes/heat/derivations.html",
+    "href": "math-viz/pdes/heat/derivations.html",
+    "title": "Heat Equation - Derivations",
+    "section": "",
+    "text": "This page contains detailed mathematical derivations of heat equation solutions.\n\n\n\nContent to be added\n\n\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\n\nAdd references as needed"
+  },
+  {
+    "objectID": "math-viz/pdes/heat/derivations.html#heat-equation-derivations",
+    "href": "math-viz/pdes/heat/derivations.html#heat-equation-derivations",
+    "title": "Heat Equation - Derivations",
+    "section": "",
+    "text": "This page contains detailed mathematical derivations of heat equation solutions.\n\n\n\nContent to be added\n\n\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\n\nAdd references as needed"
+  },
+  {
+    "objectID": "math-viz/pdes/poisson/derivations.html",
+    "href": "math-viz/pdes/poisson/derivations.html",
+    "title": "Poisson Equation - Derivations",
+    "section": "",
+    "text": "This page contains detailed mathematical derivations of Poisson equation solutions.\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nAdd references as needed"
+  },
+  {
+    "objectID": "math-viz/pdes/poisson/derivations.html#poisson-equation-derivations",
+    "href": "math-viz/pdes/poisson/derivations.html#poisson-equation-derivations",
+    "title": "Poisson Equation - Derivations",
+    "section": "",
+    "text": "This page contains detailed mathematical derivations of Poisson equation solutions.\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nAdd references as needed"
+  },
+  {
+    "objectID": "math-viz/pdes/laplace/derivations.html",
+    "href": "math-viz/pdes/laplace/derivations.html",
+    "title": "Laplace Equation - Derivations",
+    "section": "",
+    "text": "This page contains detailed mathematical derivations of Laplace equation solutions.\n\n\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\n\nAdd references as needed"
+  },
+  {
+    "objectID": "math-viz/pdes/laplace/derivations.html#laplace-equation-derivations",
+    "href": "math-viz/pdes/laplace/derivations.html#laplace-equation-derivations",
+    "title": "Laplace Equation - Derivations",
+    "section": "",
+    "text": "This page contains detailed mathematical derivations of Laplace equation solutions.\n\n\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\n\nAdd references as needed"
+  },
+  {
+    "objectID": "math-viz/pdes/wave/derivations.html",
+    "href": "math-viz/pdes/wave/derivations.html",
+    "title": "Wave Equation - Derivations",
+    "section": "",
+    "text": "This page contains detailed mathematical derivations of wave equation solutions.\n\n\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\n\nAdd references as needed"
+  },
+  {
+    "objectID": "math-viz/pdes/wave/derivations.html#wave-equation-derivations",
+    "href": "math-viz/pdes/wave/derivations.html#wave-equation-derivations",
+    "title": "Wave Equation - Derivations",
+    "section": "",
+    "text": "This page contains detailed mathematical derivations of wave equation solutions.\n\n\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\nContent to be added\n\n\n\n\nAdd references as needed"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Noah Wotscke | Mechanical Engineering",
@@ -32,6 +88,62 @@
     "href": "math-viz/index.html",
     "title": "Math-Viz: PDE Visualization Framework",
     "section": "",
-    "text": "PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\n\nQuick Links\n\nGitHub Repository\nLive Web App\n\n\n\nCurrent Features\n\nExplicit Finite Difference Solver with stability control\nReal-time 3D Visualization & analytical reference comparison\n35+ Boundary Condition Functions\nMP4 Export for animations\nCLI + Web Interface\n\n\n\nOverview\nMath-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.\n\nSupported PDEs\nPDE Overview\n├── Heat Equation (Parabolic / Time-Dependent)\n│   ├── Finite Domain (Bounded)\n│   └── Infinite Domain (Unbounded)\n│       ├── Fourier Transform\n│       └── Heat Kernel (Fundamental Solution)\n│\n├── Laplace Equation (Elliptic / Steady-State)\n│   ├── Cartesian (Rectangle)\n│   │   ├── Dirichlet (Prescribed Value)\n│   │   └── Neumann (Prescribed Derivative)\n│   └── Polar (Disk)\n│       ├── Dirichlet\n│       └── Neumann\n│\n├── Poisson Equation (Elliptic / Steady-State)\n│   ├── Dirichlet\n│   └── Neumann\n│\n└── Wave Equation (Hyperbolic / Time-Dependent)\n    ├── Finite Domain (Standing Waves)\n    │   ├── 1D String (Separation of Variables)\n    │   └── 2D Membrane (Sep. of Vars in Polar/Rect)\n    │\n    └── Infinite Domain (Traveling Waves)\n        ├── 1D (D'Alembert's Formula)\n        ├── 2D (Method of Descent / Poisson)\n        └── 3D (Kirchhoff's Formula)\n\n\n\nFeatures\n\nReal-time 3D rendering\nPDE solving capabilities\nInteractive parameter adjustment\nExport functionality"
+    "text": "PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.\n\nQuick Links\n\nGitHub Repository\nLive Web App\n\n\n\nOverview\nMath-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.\n\nSupported PDEs\n\nHeat Equation (Parabolic / Time-Dependent)\n\nFinite Domain (Bounded)\nInfinite Domain (Unbounded)\n\nFourier Transform\nHeat Kernel (Fundamental Solution)\n\n\nLaplace Equation (Elliptic / Steady-State)\n\nCartesian (Rectangle)\n\nDirichlet (Prescribed Value)\nNeumann (Prescribed Derivative)\n\nPolar (Disk)\n\nDirichlet\nNeumann\n\n\nPoisson Equation (Elliptic / Steady-State)\n\nDirichlet Boundary Conditions\nNeumann Boundary Conditions\n\nWave Equation (Hyperbolic / Time-Dependent)\n\nFinite Domain (Standing Waves)\n\n1D String (Separation of Variables)\n2D Membrane (Sep. of Vars in Polar/Rect)\n\nInfinite Domain (Traveling Waves)\n\n1D (D’Alembert’s Formula)\n2D (Method of Descent / Poisson)\n3D (Kirchhoff’s Formula)"
+  },
+  {
+    "objectID": "math-viz/pdes/wave/index.html",
+    "href": "math-viz/pdes/wave/index.html",
+    "title": "Wave Equation",
+    "section": "",
+    "text": "The wave equation is a hyperbolic PDE that describes the propagation of waves through space.\n\n\n\\[\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\nabla^2 u\\]\nwhere \\(u\\) is displacement, \\(c\\) is wave speed, and \\(\\nabla^2\\) is the Laplacian operator.\n\n\n\nThis section covers various solutions to the wave equation: - Finite Domain (Standing Waves) - 1D String (Separation of Variables) - 2D Membrane (Separation of Variables in Polar/Cartesian) - Infinite Domain (Traveling Waves) - 1D (D’Alembert’s Formula) - 2D (Method of Descent / Poisson) - 3D (Kirchhoff’s Formula)\n\n\n\n\nDerivations - Full mathematical derivations and solution methods"
+  },
+  {
+    "objectID": "math-viz/pdes/wave/index.html#wave-equation-hyperbolic-time-dependent",
+    "href": "math-viz/pdes/wave/index.html#wave-equation-hyperbolic-time-dependent",
+    "title": "Wave Equation",
+    "section": "",
+    "text": "The wave equation is a hyperbolic PDE that describes the propagation of waves through space.\n\n\n\\[\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\nabla^2 u\\]\nwhere \\(u\\) is displacement, \\(c\\) is wave speed, and \\(\\nabla^2\\) is the Laplacian operator.\n\n\n\nThis section covers various solutions to the wave equation: - Finite Domain (Standing Waves) - 1D String (Separation of Variables) - 2D Membrane (Separation of Variables in Polar/Cartesian) - Infinite Domain (Traveling Waves) - 1D (D’Alembert’s Formula) - 2D (Method of Descent / Poisson) - 3D (Kirchhoff’s Formula)\n\n\n\n\nDerivations - Full mathematical derivations and solution methods"
+  },
+  {
+    "objectID": "math-viz/pdes/laplace/index.html",
+    "href": "math-viz/pdes/laplace/index.html",
+    "title": "Laplace Equation",
+    "section": "",
+    "text": "The Laplace equation is an elliptic PDE that describes steady-state phenomena with no time dependence.\n\n\n\\[\\nabla^2 u = 0\\]\nwhere \\(u\\) is a potential function and \\(\\nabla^2\\) is the Laplacian operator.\n\n\n\nThis section covers various solutions to the Laplace equation: - Cartesian Coordinates (Rectangle) - Dirichlet (Prescribed Value) - Neumann (Prescribed Derivative) - Polar Coordinates (Disk) - Dirichlet - Neumann\n\n\n\n\nDerivations - Full mathematical derivations and solution methods"
+  },
+  {
+    "objectID": "math-viz/pdes/laplace/index.html#laplace-equation-elliptic-steady-state",
+    "href": "math-viz/pdes/laplace/index.html#laplace-equation-elliptic-steady-state",
+    "title": "Laplace Equation",
+    "section": "",
+    "text": "The Laplace equation is an elliptic PDE that describes steady-state phenomena with no time dependence.\n\n\n\\[\\nabla^2 u = 0\\]\nwhere \\(u\\) is a potential function and \\(\\nabla^2\\) is the Laplacian operator.\n\n\n\nThis section covers various solutions to the Laplace equation: - Cartesian Coordinates (Rectangle) - Dirichlet (Prescribed Value) - Neumann (Prescribed Derivative) - Polar Coordinates (Disk) - Dirichlet - Neumann\n\n\n\n\nDerivations - Full mathematical derivations and solution methods"
+  },
+  {
+    "objectID": "math-viz/pdes/poisson/index.html",
+    "href": "math-viz/pdes/poisson/index.html",
+    "title": "Poisson Equation",
+    "section": "",
+    "text": "The Poisson equation is an elliptic PDE that extends the Laplace equation to include a source term.\n\n\n\\[\\nabla^2 u = f\\]\nwhere \\(u\\) is a potential function, \\(f\\) is a source term, and \\(\\nabla^2\\) is the Laplacian operator.\n\n\n\nThis section covers various solutions to the Poisson equation: - Dirichlet Boundary Conditions (Prescribed Value) - Neumann Boundary Conditions (Prescribed Derivative)\n\n\n\n\nDerivations - Full mathematical derivations and solution methods"
+  },
+  {
+    "objectID": "math-viz/pdes/poisson/index.html#poisson-equation-elliptic-steady-state",
+    "href": "math-viz/pdes/poisson/index.html#poisson-equation-elliptic-steady-state",
+    "title": "Poisson Equation",
+    "section": "",
+    "text": "The Poisson equation is an elliptic PDE that extends the Laplace equation to include a source term.\n\n\n\\[\\nabla^2 u = f\\]\nwhere \\(u\\) is a potential function, \\(f\\) is a source term, and \\(\\nabla^2\\) is the Laplacian operator.\n\n\n\nThis section covers various solutions to the Poisson equation: - Dirichlet Boundary Conditions (Prescribed Value) - Neumann Boundary Conditions (Prescribed Derivative)\n\n\n\n\nDerivations - Full mathematical derivations and solution methods"
+  },
+  {
+    "objectID": "math-viz/pdes/heat/index.html",
+    "href": "math-viz/pdes/heat/index.html",
+    "title": "Heat Equation",
+    "section": "",
+    "text": "The heat equation is a fundamental parabolic partial differential equation that describes how heat diffuses through space over time.\n\n\n\\[\\frac{\\partial u}{\\partial t} = \\alpha \\nabla^2 u\\]\nwhere \\(u(x,t)\\) is temperature, \\(\\alpha\\) is thermal diffusivity, and \\(\\nabla^2\\) is the Laplacian operator.\n\n\n\nThis section covers various solutions to the heat equation: - Finite Domain (Bounded) - Infinite Domain (Unbounded) - Fourier Transform - Heat Kernel (Fundamental Solution)\n\n\n\n\nDerivations - Full mathematical derivations and solution methods"
+  },
+  {
+    "objectID": "math-viz/pdes/heat/index.html#heat-equation-parabolic-time-dependent",
+    "href": "math-viz/pdes/heat/index.html#heat-equation-parabolic-time-dependent",
+    "title": "Heat Equation",
+    "section": "",
+    "text": "The heat equation is a fundamental parabolic partial differential equation that describes how heat diffuses through space over time.\n\n\n\\[\\frac{\\partial u}{\\partial t} = \\alpha \\nabla^2 u\\]\nwhere \\(u(x,t)\\) is temperature, \\(\\alpha\\) is thermal diffusivity, and \\(\\nabla^2\\) is the Laplacian operator.\n\n\n\nThis section covers various solutions to the heat equation: - Finite Domain (Bounded) - Infinite Domain (Unbounded) - Fourier Transform - Heat Kernel (Fundamental Solution)\n\n\n\n\nDerivations - Full mathematical derivations and solution methods"
   }
 ]
