@@ -61,5 +61,20 @@
   },
   "math-viz/pdes/index.qmd": {
     "index.html": "b231731a"
+  },
+  "math-viz/technical/web-app/index.qmd": {
+    "index.html": "1452d601"
+  },
+  "math-viz/technical/numerical-methods/index.qmd": {
+    "index.html": "17f4c965"
+  },
+  "math-viz/technical/cli/index.qmd": {
+    "index.html": "0a015c65"
+  },
+  "math-viz/technical/index.qmd": {
+    "index.html": "c0d3adf2"
+  },
+  "math-viz/technical/api/index.qmd": {
+    "index.html": "ef14539d"
   }
 }

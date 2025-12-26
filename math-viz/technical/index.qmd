@@ -1,0 +1,76 @@
+---
+title: "Technical Documentation"
+---
+
+## Technical Documentation
+
+Comprehensive documentation for the Math-Viz framework architecture, implementation details, and usage guides.
+
+### Overview
+
+This section covers the technical implementation of Math-Viz, including:
+- Numerical solution methods
+- API and interfaces
+- Command-line tools
+- Web application architecture
+
+---
+
+## Core Components
+
+### [Numerical Methods](numerical-methods/index.html)
+
+Documentation of the numerical solvers and discretization techniques used in Math-Viz.
+
+- Explicit Finite Difference Method
+- Stability analysis and CFL conditions
+- Grid generation and boundary handling
+- Performance optimization
+
+[View Numerical Methods →](numerical-methods/index.html)
+
+---
+
+### [API Documentation](api/index.html)
+
+Complete reference for the Math-Viz Python API.
+
+- Core solver classes
+- Solution interfaces
+- Visualization utilities
+- Configuration options
+
+[View API Documentation →](api/index.html)
+
+---
+
+### [CLI Guide](cli/index.html)
+
+Guide to using the Math-Viz command-line interface.
+
+- Installation and setup
+- Basic usage examples
+- Advanced options
+- Output formats and export
+
+[View CLI Guide →](cli/index.html)
+
+---
+
+### [Web Application](web-app/index.html)
+
+Documentation for the interactive web interface.
+
+- Features and interface
+- Parameter selection
+- Real-time visualization
+- Result export
+
+[View Web Application →](web-app/index.html)
+
+---
+
+## Quick Links
+
+- [GitHub Repository](https://github.com/NoahWotschke/Math-Viz){target="_blank"}
+- [Live Web App](https://math-viz.streamlit.app){target="_blank"}

@@ -1,0 +1,48 @@
+---
+title: "API Documentation"
+---
+
+## API Documentation
+
+Complete reference for the Math-Viz Python API.
+
+### Core Solver Classes
+
+*Content to be added*
+
+- `HeatSolver`
+- `LaplaceSolver`
+- `PoissonSolver`
+- `WaveSolver`
+
+### Boundary Conditions
+
+*Content to be added*
+
+- Dirichlet conditions
+- Neumann conditions
+- Periodic conditions
+
+### Visualization Utilities
+
+*Content to be added*
+
+- 3D plotting
+- Animation generation
+- Result comparison
+
+### Configuration
+
+*Content to be added*
+
+- Solver parameters
+- Grid settings
+- Output options
+
+### Code Examples
+
+*Content to be added*
+
+### References
+
+*Add references as needed*

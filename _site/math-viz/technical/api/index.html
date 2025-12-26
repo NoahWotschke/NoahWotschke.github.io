@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Math-Viz: PDE Visualization Framework – Noah Wotschke | Mechanical Engineering</title>
+<title>API Documentation – Noah Wotschke | Mechanical Engineering</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f5c3f06fbfae0a0c06815c3c7afb2723.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-f5c3f06fbfae0a0c06815c3c7afb2723.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Noah Wotschke | Mechanical Engineering</span>
     </a>
   </div>
@@ -91,19 +91,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link" href="../../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../extracurriculars.html"> 
+    <a class="nav-link" href="../../../extracurriculars.html"> 
 <span class="menu-text">Activities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -122,8 +122,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quick-links" id="toc-quick-links" class="nav-link active" data-scroll-target="#quick-links">Quick Links</a></li>
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#api-documentation" id="toc-api-documentation" class="nav-link active" data-scroll-target="#api-documentation">API Documentation</a>
+  <ul class="collapse">
+  <li><a href="#core-solver-classes" id="toc-core-solver-classes" class="nav-link" data-scroll-target="#core-solver-classes">Core Solver Classes</a></li>
+  <li><a href="#boundary-conditions" id="toc-boundary-conditions" class="nav-link" data-scroll-target="#boundary-conditions">Boundary Conditions</a></li>
+  <li><a href="#visualization-utilities" id="toc-visualization-utilities" class="nav-link" data-scroll-target="#visualization-utilities">Visualization Utilities</a></li>
+  <li><a href="#configuration" id="toc-configuration" class="nav-link" data-scroll-target="#configuration">Configuration</a></li>
+  <li><a href="#code-examples" id="toc-code-examples" class="nav-link" data-scroll-target="#code-examples">Code Examples</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -132,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Math-Viz: PDE Visualization Framework</h1>
+<h1 class="title">API Documentation</h1>
 </div>
 
 
@@ -149,64 +156,53 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>PDE Visualization Framework</strong> - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.</p>
-<section id="quick-links" class="level3">
-<h3 class="anchored" data-anchor-id="quick-links">Quick Links</h3>
+<section id="api-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="api-documentation">API Documentation</h2>
+<p>Complete reference for the Math-Viz Python API.</p>
+<section id="core-solver-classes" class="level3">
+<h3 class="anchored" data-anchor-id="core-solver-classes">Core Solver Classes</h3>
+<p><em>Content to be added</em></p>
 <ul>
-<li><a href="https://github.com/NoahWotschke/Math-Viz" target="_blank">GitHub Repository</a></li>
-<li><a href="https://math-viz.streamlit.app" target="_blank">Live Web App</a></li>
-<li><a href="pdes/index.html">PDE Solutions &amp; Derivations</a></li>
-<li><a href="technical/index.html">Technical Documentation</a></li>
+<li><code>HeatSolver</code></li>
+<li><code>LaplaceSolver</code></li>
+<li><code>PoissonSolver</code></li>
+<li><code>WaveSolver</code></li>
 </ul>
 </section>
-<section id="overview" class="level3">
-<h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>Math-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.</p>
-<section id="supported-pdes" class="level4">
-<h4 class="anchored" data-anchor-id="supported-pdes">Supported PDEs</h4>
+<section id="boundary-conditions" class="level3">
+<h3 class="anchored" data-anchor-id="boundary-conditions">Boundary Conditions</h3>
+<p><em>Content to be added</em></p>
 <ul>
-<li><a href="pdes/heat/index.html"><strong>Heat Equation</strong></a> (Parabolic / Time-Dependent)
-<ul>
-<li>Finite Domain (Bounded)</li>
-<li>Infinite Domain (Unbounded)
-<ul>
-<li>Fourier Transform</li>
-<li>Heat Kernel (Fundamental Solution)</li>
-</ul></li>
-</ul></li>
-<li><a href="pdes/laplace/index.html"><strong>Laplace Equation</strong></a> (Elliptic / Steady-State)
-<ul>
-<li>Cartesian (Rectangle)
-<ul>
-<li>Dirichlet (Prescribed Value)</li>
-<li>Neumann (Prescribed Derivative)</li>
-</ul></li>
-<li>Polar (Disk)
-<ul>
-<li>Dirichlet</li>
-<li>Neumann</li>
-</ul></li>
-</ul></li>
-<li><a href="pdes/poisson/index.html"><strong>Poisson Equation</strong></a> (Elliptic / Steady-State)
-<ul>
-<li>Dirichlet Boundary Conditions</li>
-<li>Neumann Boundary Conditions</li>
-</ul></li>
-<li><a href="pdes/wave/index.html"><strong>Wave Equation</strong></a> (Hyperbolic / Time-Dependent)
-<ul>
-<li>Finite Domain (Standing Waves)
-<ul>
-<li>1D String (Separation of Variables)</li>
-<li>2D Membrane (Sep.&nbsp;of Vars in Polar/Rect)</li>
-</ul></li>
-<li>Infinite Domain (Traveling Waves)
-<ul>
-<li>1D (D’Alembert’s Formula)</li>
-<li>2D (Method of Descent / Poisson)</li>
-<li>3D (Kirchhoff’s Formula)</li>
-</ul></li>
-</ul></li>
+<li>Dirichlet conditions</li>
+<li>Neumann conditions</li>
+<li>Periodic conditions</li>
 </ul>
+</section>
+<section id="visualization-utilities" class="level3">
+<h3 class="anchored" data-anchor-id="visualization-utilities">Visualization Utilities</h3>
+<p><em>Content to be added</em></p>
+<ul>
+<li>3D plotting</li>
+<li>Animation generation</li>
+<li>Result comparison</li>
+</ul>
+</section>
+<section id="configuration" class="level3">
+<h3 class="anchored" data-anchor-id="configuration">Configuration</h3>
+<p><em>Content to be added</em></p>
+<ul>
+<li>Solver parameters</li>
+<li>Grid settings</li>
+<li>Output options</li>
+</ul>
+</section>
+<section id="code-examples" class="level3">
+<h3 class="anchored" data-anchor-id="code-examples">Code Examples</h3>
+<p><em>Content to be added</em></p>
+</section>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<p><em>Add references as needed</em></p>
 
 
 </section>

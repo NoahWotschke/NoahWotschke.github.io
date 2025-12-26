@@ -1,0 +1,39 @@
+---
+title: "CLI Guide"
+---
+
+## Command-Line Interface Guide
+
+Guide to using the Math-Viz command-line interface for solving PDEs.
+
+### Installation
+
+*Content to be added*
+
+### Basic Usage
+
+*Content to be added*
+
+### Common Examples
+
+*Content to be added*
+
+### Advanced Options
+
+*Content to be added*
+
+### Output Formats
+
+*Content to be added*
+
+- Solution data export
+- Visualization formats
+- Animation generation
+
+### Troubleshooting
+
+*Content to be added*
+
+### References
+
+*Add references as needed*

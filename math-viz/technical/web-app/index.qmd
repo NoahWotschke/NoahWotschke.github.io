@@ -1,0 +1,50 @@
+---
+title: "Web Application"
+---
+
+## Web Application Documentation
+
+Guide to using the interactive Math-Viz web application.
+
+### Overview
+
+*Content to be added*
+
+The web application provides an intuitive interface for:
+- Selecting PDEs and methods
+- Adjusting parameters
+- Visualizing solutions in real-time
+- Exporting results
+
+### Features
+
+*Content to be added*
+
+- Real-time 3D visualization
+- Interactive parameter controls
+- Solution animation
+- Result export
+
+### Getting Started
+
+*Content to be added*
+
+### Parameter Guide
+
+*Content to be added*
+
+### Visualization Options
+
+*Content to be added*
+
+### Export and Download
+
+*Content to be added*
+
+### Troubleshooting
+
+*Content to be added*
+
+### References
+
+*Add references as needed*

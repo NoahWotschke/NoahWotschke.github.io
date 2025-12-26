@@ -7,6 +7,8 @@ title: "Math-Viz: PDE Visualization Framework"
 ### Quick Links
 - [GitHub Repository](https://github.com/NoahWotschke/Math-Viz){target="_blank"}
 - [Live Web App](https://math-viz.streamlit.app){target="_blank"}
+- [PDE Solutions & Derivations](pdes/index.html)
+- [Technical Documentation](technical/index.html)
 
 ### Overview
 
