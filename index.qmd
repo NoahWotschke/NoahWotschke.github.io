@@ -1,5 +1,6 @@
 ---
 title: "Noah Wotschke"
+subtitle: "Second-year Mechanical Engineering Student | ETH Zurich"
 about:
   template: solana
   links:
@@ -13,8 +14,6 @@ about:
       text: About Me
       href: about.html
 ---
-
-**Second-year Mechanical Engineering Student | ETH Zurich**
 
 This website acts as a personal archive of my work in engineering and mathematics. I use this space to document my projects—from academic research to private coding experiments. My goal is to capture the learning process and showcase the underlying logic of the systems I study.
 

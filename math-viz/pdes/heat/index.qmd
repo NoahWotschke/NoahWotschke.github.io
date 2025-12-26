@@ -1,8 +1,7 @@
 ---
 title: "Heat Equation"
+subtitle: "Parabolic / Time-Dependent"
 ---
-
-## Heat Equation (Parabolic / Time-Dependent)
 
 The heat equation is a fundamental parabolic partial differential equation that describes how heat diffuses through space over time.
 
@@ -20,6 +19,6 @@ This section covers various solutions to the heat equation:
   - Fourier Transform
   - Heat Kernel (Fundamental Solution)
 
-### Pages
+### Derivation
 
 - [Derivations](derivations.html) - Full mathematical derivations and solution methods

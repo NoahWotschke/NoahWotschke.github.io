@@ -1,8 +1,7 @@
 ---
 title: "Laplace Equation"
+subtitle: "Elliptic / Steady-State"
 ---
-
-## Laplace Equation (Elliptic / Steady-State)
 
 The Laplace equation is an elliptic PDE that describes steady-state phenomena with no time dependence.
 
@@ -22,6 +21,6 @@ This section covers various solutions to the Laplace equation:
   - Dirichlet
   - Neumann
 
-### Pages
+### Derivations
 
 - [Derivations](derivations.html) - Full mathematical derivations and solution methods

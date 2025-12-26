@@ -1,44 +1,70 @@
 ---
 title: "Math-Viz: PDE Visualization Framework"
+subtitle: "A computational framework for visualizing Partial Differential Equations"
 ---
-
-**PDE Visualization Framework** - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.
 
 ::: {.callout-note}
 ## Project Status still in Development !
 
-Math-Viz is currently under active development. Suggestions, corrections, and feedback are welcome! Please send any comments or improvements to [noah.wotschke@student.ethz.ch](mailto:noah.wotschke@student.ethz.ch).
+This project is currently under active development. Some features or visualizations may be experimental. Feedback, corrections, and suggestions are highly appreciated! Please reach out to [noah.wotschke@student.ethz.ch](mailto:noah.wotschke@student.ethz.ch).
 :::
 
-### Overview
+## Project Overview
 
-Math-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.
+**Math-Viz** is a computational framework for the solution and visualization of classical Partial Differential Equations.
 
-#### Supported PDEs
+This project implements both analytical solutions (via Separation of Variables and Fourier Analysis) and numerical schemes to model the behavior of Heat, Wave, and Potential fields. It specifically focuses on the effects of varying Boundary Value Problems (Dirichlet vs. Neumann) across different coordinate systems.
 
-- [**Heat Equation**](pdes/heat/index.html) (Parabolic / Time-Dependent)
-  - Finite Domain (Bounded)
-  - Infinite Domain (Unbounded)
-    - Fourier Transform
-    - Heat Kernel (Fundamental Solution)
+### Supported PDEs
 
-- [**Laplace Equation**](pdes/laplace/index.html) (Elliptic / Steady-State)
-  - Cartesian (Rectangle)
-    - Dirichlet (Prescribed Value)
-    - Neumann (Prescribed Derivative)
-  - Polar (Disk)
-    - Dirichlet
-    - Neumann
+::: {.grid}
 
-- [**Poisson Equation**](pdes/poisson/index.html) (Elliptic / Steady-State)
-  - Dirichlet Boundary Conditions
-  - Neumann Boundary Conditions
+::: {.g-col-12 .g-col-md-6}
+::: {.card style="text-align: center;"}
+#### [Heat Equation](pdes/heat/index.html)
+**Parabolic / Time-Dependent**
 
-- [**Wave Equation**](pdes/wave/index.html) (Hyperbolic / Time-Dependent)
-  - Finite Domain (Standing Waves)
-    - 1D String (Separation of Variables)
-    - 2D Membrane (Sep. of Vars in Polar/Rect)
-  - Infinite Domain (Traveling Waves)
-    - 1D (D'Alembert's Formula)
-    - 2D (Method of Descent / Poisson)
-    - 3D (Kirchhoff's Formula)
+Describes heat diffusion through space and time.
+
+Finite Domain (Bounded) \
+Infinite Domain (Unbounded)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card style="text-align: center;"}
+#### [Laplace Equation](pdes/laplace/index.html)
+**Elliptic / Steady-State**
+
+Describes steady-state potential fields with no source.
+
+Cartesian Coordinates \
+Polar Coordinates
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card style="text-align: center;"}
+#### [Poisson Equation](pdes/poisson/index.html)
+**Elliptic / Steady-State**
+
+Extends Laplace equation with a source term.
+
+Cartesian Basis with \
+Various Boundary Conditions
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card style="text-align: center;"}
+#### [Wave Equation](pdes/wave/index.html)
+**Hyperbolic / Time-Dependent**
+
+Describes wave propagation through space and time.
+
+Standing Waves (Finite Domain) \
+Traveling Waves (Infinite Domain)
+:::
+:::
+
+:::

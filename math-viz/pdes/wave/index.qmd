@@ -1,8 +1,7 @@
 ---
 title: "Wave Equation"
+subtitle: "Hyperbolic / Time-Dependent"
 ---
-
-## Wave Equation (Hyperbolic / Time-Dependent)
 
 The wave equation is a hyperbolic PDE that describes the propagation of waves through space.
 
@@ -23,6 +22,6 @@ This section covers various solutions to the wave equation:
   - 2D (Method of Descent / Poisson)
   - 3D (Kirchhoff's Formula)
 
-### Pages
+### Derivation
 
 - [Derivations](derivations.html) - Full mathematical derivations and solution methods

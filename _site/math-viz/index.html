@@ -176,7 +176,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a>
+  <ul class="collapse">
+  <li><a href="#supported-pdes" id="toc-supported-pdes" class="nav-link" data-scroll-target="#supported-pdes">Supported PDEs</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -186,6 +189,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Math-Viz: PDE Visualization Framework</h1>
+<p class="subtitle lead">A computational framework for visualizing Partial Differential Equations</p>
 </div>
 
 
@@ -202,7 +206,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>PDE Visualization Framework</strong> - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -213,57 +216,53 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Math-Viz is currently under active development. Suggestions, corrections, and feedback are welcome! Please send any comments or improvements to <a href="mailto:noah.wotschke@student.ethz.ch">noah.wotschke@student.ethz.ch</a>.</p>
+<p>This project is currently under active development. Some features or visualizations may be experimental. Feedback, corrections, and suggestions are highly appreciated! Please reach out to <a href="mailto:noah.wotschke@student.ethz.ch">noah.wotschke@student.ethz.ch</a>.</p>
 </div>
 </div>
-<section id="overview" class="level3">
-<h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>Math-Viz provides an intuitive interface for exploring complex mathematical concepts through interactive 3D visualization.</p>
-<section id="supported-pdes" class="level4">
-<h4 class="anchored" data-anchor-id="supported-pdes">Supported PDEs</h4>
-<ul>
-<li><a href="pdes/heat/index.html"><strong>Heat Equation</strong></a> (Parabolic / Time-Dependent)
-<ul>
-<li>Finite Domain (Bounded)</li>
-<li>Infinite Domain (Unbounded)
-<ul>
-<li>Fourier Transform</li>
-<li>Heat Kernel (Fundamental Solution)</li>
-</ul></li>
-</ul></li>
-<li><a href="pdes/laplace/index.html"><strong>Laplace Equation</strong></a> (Elliptic / Steady-State)
-<ul>
-<li>Cartesian (Rectangle)
-<ul>
-<li>Dirichlet (Prescribed Value)</li>
-<li>Neumann (Prescribed Derivative)</li>
-</ul></li>
-<li>Polar (Disk)
-<ul>
-<li>Dirichlet</li>
-<li>Neumann</li>
-</ul></li>
-</ul></li>
-<li><a href="pdes/poisson/index.html"><strong>Poisson Equation</strong></a> (Elliptic / Steady-State)
-<ul>
-<li>Dirichlet Boundary Conditions</li>
-<li>Neumann Boundary Conditions</li>
-</ul></li>
-<li><a href="pdes/wave/index.html"><strong>Wave Equation</strong></a> (Hyperbolic / Time-Dependent)
-<ul>
-<li>Finite Domain (Standing Waves)
-<ul>
-<li>1D String (Separation of Variables)</li>
-<li>2D Membrane (Sep.&nbsp;of Vars in Polar/Rect)</li>
-</ul></li>
-<li>Infinite Domain (Traveling Waves)
-<ul>
-<li>1D (D’Alembert’s Formula)</li>
-<li>2D (Method of Descent / Poisson)</li>
-<li>3D (Kirchhoff’s Formula)</li>
-</ul></li>
-</ul></li>
-</ul>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p><strong>Math-Viz</strong> is a computational framework for the solution and visualization of classical Partial Differential Equations.</p>
+<p>This project implements both analytical solutions (via Separation of Variables and Fourier Analysis) and numerical schemes to model the behavior of Heat, Wave, and Potential fields. It specifically focuses on the effects of varying Boundary Value Problems (Dirichlet vs.&nbsp;Neumann) across different coordinate systems.</p>
+<section id="supported-pdes" class="level3">
+<h3 class="anchored" data-anchor-id="supported-pdes">Supported PDEs</h3>
+<div class="grid">
+<div class="g-col-12 g-col-md-6">
+<section id="heat-equation" class="level4 card" style="text-align: center;">
+<h4 class="anchored" data-anchor-id="heat-equation"><a href="pdes/heat/index.html">Heat Equation</a></h4>
+<p><strong>Parabolic / Time-Dependent</strong></p>
+<p>Describes heat diffusion through space and time.</p>
+<p>Finite Domain (Bounded)<br>
+Infinite Domain (Unbounded)</p>
+</section>
+</div>
+<div class="g-col-12 g-col-md-6">
+<section id="laplace-equation" class="level4 card" style="text-align: center;">
+<h4 class="anchored" data-anchor-id="laplace-equation"><a href="pdes/laplace/index.html">Laplace Equation</a></h4>
+<p><strong>Elliptic / Steady-State</strong></p>
+<p>Describes steady-state potential fields with no source.</p>
+<p>Cartesian Coordinates<br>
+Polar Coordinates</p>
+</section>
+</div>
+<div class="g-col-12 g-col-md-6">
+<section id="poisson-equation" class="level4 card" style="text-align: center;">
+<h4 class="anchored" data-anchor-id="poisson-equation"><a href="pdes/poisson/index.html">Poisson Equation</a></h4>
+<p><strong>Elliptic / Steady-State</strong></p>
+<p>Extends Laplace equation with a source term.</p>
+<p>Cartesian Basis with<br>
+Various Boundary Conditions</p>
+</section>
+</div>
+<div class="g-col-12 g-col-md-6">
+<section id="wave-equation" class="level4 card" style="text-align: center;">
+<h4 class="anchored" data-anchor-id="wave-equation"><a href="pdes/wave/index.html">Wave Equation</a></h4>
+<p><strong>Hyperbolic / Time-Dependent</strong></p>
+<p>Describes wave propagation through space and time.</p>
+<p>Standing Waves (Finite Domain)<br>
+Traveling Waves (Infinite Domain)</p>
+</section>
+</div>
+</div>
 
 
 </section>

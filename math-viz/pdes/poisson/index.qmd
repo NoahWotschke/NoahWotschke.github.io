@@ -1,8 +1,7 @@
 ---
 title: "Poisson Equation"
+subtitle: "Elliptic / Steady-State"
 ---
-
-## Poisson Equation (Elliptic / Steady-State)
 
 The Poisson equation is an elliptic PDE that extends the Laplace equation to include a source term.
 
@@ -18,6 +17,6 @@ This section covers various solutions to the Poisson equation:
 - Dirichlet Boundary Conditions (Prescribed Value)
 - Neumann Boundary Conditions (Prescribed Derivative)
 
-### Pages
+### Derivations
 
 - [Derivations](derivations.html) - Full mathematical derivations and solution methods
