@@ -1,0 +1,73 @@
+---
+title: "PDE Solutions & Derivations"
+---
+
+## Partial Differential Equations
+
+This section contains comprehensive mathematical derivations and solutions for the key partial differential equations implemented in Math-Viz.
+
+### Overview
+
+Partial Differential Equations (PDEs) are fundamental to modeling physical phenomena across engineering, physics, and mathematics. The equations below represent the most important classes of PDEs, categorized by their mathematical properties.
+
+### PDE Classes
+
+**Parabolic PDEs** describe diffusion and heat transfer processes that evolve towards steady-state over time.
+
+**Elliptic PDEs** describe steady-state phenomena where no time dependence exists.
+
+**Hyperbolic PDEs** describe wave propagation and oscillatory phenomena.
+
+---
+
+## Explore Individual PDEs
+
+### [Heat Equation](heat/index.html)
+**Parabolic / Time-Dependent**
+
+$$\frac{\partial u}{\partial t} = \alpha \nabla^2 u$$
+
+The heat equation describes how temperature diffuses through space over time. Explore finite and infinite domain solutions, including Fourier transform and heat kernel methods.
+
+[View Heat Equation →](heat/index.html)
+
+---
+
+### [Laplace Equation](laplace/index.html)
+**Elliptic / Steady-State**
+
+$$\nabla^2 u = 0$$
+
+The Laplace equation describes steady-state potential fields with no source term. Solutions cover both Cartesian and polar coordinate systems with Dirichlet and Neumann boundary conditions.
+
+[View Laplace Equation →](laplace/index.html)
+
+---
+
+### [Poisson Equation](poisson/index.html)
+**Elliptic / Steady-State**
+
+$$\nabla^2 u = f$$
+
+The Poisson equation extends the Laplace equation with a source term $f$, modeling phenomena like electrostatics and gravitational fields.
+
+[View Poisson Equation →](poisson/index.html)
+
+---
+
+### [Wave Equation](wave/index.html)
+**Hyperbolic / Time-Dependent**
+
+$$\frac{\partial^2 u}{\partial t^2} = c^2 \nabla^2 u$$
+
+The wave equation describes wave propagation through space and time. Solutions include standing waves in finite domains and traveling waves in infinite domains.
+
+[View Wave Equation →](wave/index.html)
+
+---
+
+## Quick Navigation
+
+Each PDE folder contains:
+- **index.qmd** - Overview and equation classification
+- **derivations.qmd** - Detailed mathematical derivations and solution methods

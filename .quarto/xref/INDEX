@@ -58,5 +58,8 @@
   },
   "math-viz/pdes/wave/derivations.qmd": {
     "derivations.html": "4af4c9da"
+  },
+  "math-viz/pdes/index.qmd": {
+    "index.html": "b231731a"
   }
 }
