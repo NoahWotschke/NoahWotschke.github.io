@@ -1,0 +1,9 @@
+---
+title: "CV / Resume"
+---
+
+## Curriculum Vitae
+
+Coming soon! Add your CV/resume information here.
+
+[← Back to About](index.html)

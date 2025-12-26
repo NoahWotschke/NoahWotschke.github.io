@@ -11,9 +11,7 @@ website:
         text: Home
       - href: projects.html
         text: Projects
-      - href: extracurriculars.html
-        text: Activities
-      - href: about.html
+      - href: about/index.html
         text: About
 
 format:

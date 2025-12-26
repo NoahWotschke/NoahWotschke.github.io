@@ -76,5 +76,14 @@
   },
   "math-viz/technical/api/index.qmd": {
     "index.html": "ef14539d"
+  },
+  "about/index.qmd": {
+    "index.html": "7a61f91e"
+  },
+  "about/extracurriculars.qmd": {
+    "extracurriculars.html": "a5fb7b8d"
+  },
+  "about/cv.qmd": {
+    "cv.html": "814be421"
   }
 }

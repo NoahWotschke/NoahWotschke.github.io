@@ -1,0 +1,12 @@
+---
+title: "About Me"
+---
+
+## About
+
+Add your introduction and background information here.
+
+### Navigate
+
+- [Extracurricular Activities](extracurriculars.html) - My involvement and activities
+- [CV/Resume](cv.html) - My academic and professional background
