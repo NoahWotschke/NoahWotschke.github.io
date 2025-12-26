@@ -105,6 +105,13 @@
     "text": "Complete reference for the Math-Viz Python API.\n\n\nContent to be added\n\nHeatSolver\nLaplaceSolver\nPoissonSolver\nWaveSolver\n\n\n\n\nContent to be added\n\nDirichlet conditions\nNeumann conditions\nPeriodic conditions\n\n\n\n\nContent to be added\n\n3D plotting\nAnimation generation\nResult comparison\n\n\n\n\nContent to be added\n\nSolver parameters\nGrid settings\nOutput options\n\n\n\n\nContent to be added\n\n\n\nAdd references as needed"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Noah Wotschke",
+    "section": "",
+    "text": "Second-year Mechanical Engineering Student | ETH Zurich\nThis website acts as a personal archive of my work in engineering and mathematics. I use this space to document my projects—from academic research to private coding experiments. My goal is to capture the learning process and showcase the underlying logic of the systems I study.\n\n\nFeatured Work\nMath-Viz: PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering. Includes detailed mathematical derivations and numerical solution methods for heat, Laplace, Poisson, and wave equations.\n\n\nExplore\n\nProjects - Complete portfolio of engineering and technical projects\nExtracurriculars - Involvement and activities\nAbout - More about me and my interests\n\nFor a more detailed view of my background and interests, please visit the About section."
+  },
+  {
     "objectID": "extracurriculars.html",
     "href": "extracurriculars.html",
     "title": "Activities",
