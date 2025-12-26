@@ -22,12 +22,16 @@ This website acts as a personal archive of my work in engineering and mathematic
 
 **[Math-Viz: PDE Visualization Framework](math-viz/index.html)** - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering. Includes detailed mathematical derivations and numerical solution methods for heat, Laplace, Poisson, and wave equations.
 
+::: {.callout-info}
+## Project Status: In Development
+
+Math-Viz is currently under active development. Suggestions, corrections, and feedback are welcome! Please send any comments or improvements to [noah.wotschke@student.ethz.ch](mailto:noah.wotschke@student.ethz.ch).
+:::
+
 ### Explore
 
 - **[Projects](projects.html)** - Complete portfolio of engineering and technical projects
 - **[Extracurriculars](extracurriculars.html)** - Involvement and activities
-- **[About](about.html)** - More about me and my interests
-
-For a more detailed view of my background and interests, please visit the [About section](about.html).
+- **[About](about.html)** - More about me as a student
 
 

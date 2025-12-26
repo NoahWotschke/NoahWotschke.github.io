@@ -116,7 +116,14 @@
     "href": "index.html",
     "title": "Noah Wotschke",
     "section": "",
-    "text": "Second-year Mechanical Engineering Student | ETH Zurich\nThis website acts as a personal archive of my work in engineering and mathematics. I use this space to document my projects—from academic research to private coding experiments. My goal is to capture the learning process and showcase the underlying logic of the systems I study.\n\nFeatured Work\nMath-Viz: PDE Visualization Framework - A comprehensive tool for solving and visualizing Partial Differential Equations with real-time 3D rendering. Includes detailed mathematical derivations and numerical solution methods for heat, Laplace, Poisson, and wave equations.\n\n\nExplore\n\nProjects - Complete portfolio of engineering and technical projects\nExtracurriculars - Involvement and activities\nAbout - More about me and my interests\n\nFor a more detailed view of my background and interests, please visit the About section."
+    "text": "Second-year Mechanical Engineering Student | ETH Zurich\nThis website acts as a personal archive of my work in engineering and mathematics. I use this space to document my projects—from academic research to private coding experiments. My goal is to capture the learning process and showcase the underlying logic of the systems I study."
+  },
+  {
+    "objectID": "index.html#project-status-in-development",
+    "href": "index.html#project-status-in-development",
+    "title": "Noah Wotschke",
+    "section": "Project Status: In Development",
+    "text": "Project Status: In Development\nMath-Viz is currently under active development. Suggestions, corrections, and feedback are welcome! Please send any comments or improvements to noah.wotschke@student.ethz.ch."
   },
   {
     "objectID": "projects.html",
