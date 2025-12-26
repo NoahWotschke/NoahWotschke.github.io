@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="This section contains comprehensive mathematical derivations and solutions for the key partial differential equations implemented in Math-Viz.">
 
 <title>PDE Solutions &amp; Derivations – Noah Wotschke | Mechanical Engineering</title>
 <style>
@@ -205,19 +206,15 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#partial-differential-equations" id="toc-partial-differential-equations" class="nav-link active" data-scroll-target="#partial-differential-equations">Partial Differential Equations</a>
-  <ul class="collapse">
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#pde-classes" id="toc-pde-classes" class="nav-link" data-scroll-target="#pde-classes">PDE Classes</a></li>
-  </ul></li>
   <li><a href="#explore-individual-pdes" id="toc-explore-individual-pdes" class="nav-link" data-scroll-target="#explore-individual-pdes">Explore Individual PDEs</a>
   <ul class="collapse">
-  <li><a href="#heat-equation" id="toc-heat-equation" class="nav-link" data-scroll-target="#heat-equation">Heat Equation</a></li>
-  <li><a href="#laplace-equation" id="toc-laplace-equation" class="nav-link" data-scroll-target="#laplace-equation">Laplace Equation</a></li>
-  <li><a href="#poisson-equation" id="toc-poisson-equation" class="nav-link" data-scroll-target="#poisson-equation">Poisson Equation</a></li>
-  <li><a href="#wave-equation" id="toc-wave-equation" class="nav-link" data-scroll-target="#wave-equation">Wave Equation</a></li>
+  <li><a href="#the-heat-equation" id="toc-the-heat-equation" class="nav-link" data-scroll-target="#the-heat-equation">The Heat Equation</a></li>
+  <li><a href="#the-laplace-equation" id="toc-the-laplace-equation" class="nav-link" data-scroll-target="#the-laplace-equation">The Laplace Equation</a></li>
+  <li><a href="#the-poisson-equation" id="toc-the-poisson-equation" class="nav-link" data-scroll-target="#the-poisson-equation">The Poisson Equation</a></li>
+  <li><a href="#the-wave-equation" id="toc-the-wave-equation" class="nav-link" data-scroll-target="#the-wave-equation">The Wave Equation</a></li>
   </ul></li>
-  <li><a href="#quick-navigation" id="toc-quick-navigation" class="nav-link" data-scroll-target="#quick-navigation">Quick Navigation</a></li>
   </ul>
 </nav>
     </div>
@@ -229,6 +226,11 @@ window.Quarto = {
 <h1 class="title">PDE Solutions &amp; Derivations</h1>
 </div>
 
+<div>
+  <div class="description">
+    This section contains comprehensive mathematical derivations and solutions for the key partial differential equations implemented in Math-Viz.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -243,61 +245,48 @@ window.Quarto = {
 </header>
 
 
-<section id="partial-differential-equations" class="level2">
-<h2 class="anchored" data-anchor-id="partial-differential-equations">Partial Differential Equations</h2>
-<p>This section contains comprehensive mathematical derivations and solutions for the key partial differential equations implemented in Math-Viz.</p>
 <section id="overview" class="level3">
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>Partial Differential Equations (PDEs) are fundamental to modeling physical phenomena across engineering, physics, and mathematics. The equations below represent the most important classes of PDEs, categorized by their mathematical properties.</p>
+<p>Partial Differential Equations (PDEs) are fundamental to modeling physical phenomena across engineering and physics. The equations and analytical solutions below represent the most important classical PDEs I studied during my Analysis III course at ETH.</p>
 </section>
-<section id="pde-classes" class="level3">
-<h3 class="anchored" data-anchor-id="pde-classes">PDE Classes</h3>
+<section id="pde-classes" class="level2">
+<h2 class="anchored" data-anchor-id="pde-classes">PDE Classes</h2>
 <p><strong>Parabolic PDEs</strong> describe diffusion and heat transfer processes that evolve towards steady-state over time.</p>
 <p><strong>Elliptic PDEs</strong> describe steady-state phenomena where no time dependence exists.</p>
 <p><strong>Hyperbolic PDEs</strong> describe wave propagation and oscillatory phenomena.</p>
 <hr>
 </section>
-</section>
 <section id="explore-individual-pdes" class="level2">
 <h2 class="anchored" data-anchor-id="explore-individual-pdes">Explore Individual PDEs</h2>
-<section id="heat-equation" class="level3">
-<h3 class="anchored" data-anchor-id="heat-equation"><a href="heat/index.html">Heat Equation</a></h3>
+<section id="the-heat-equation" class="level3">
+<h3 class="anchored" data-anchor-id="the-heat-equation">The <a href="heat/index.html">Heat Equation</a></h3>
 <p><strong>Parabolic / Time-Dependent</strong></p>
 <p><span class="math display">\[\frac{\partial u}{\partial t} = \alpha \nabla^2 u\]</span></p>
 <p>The heat equation describes how temperature diffuses through space over time. Explore finite and infinite domain solutions, including Fourier transform and heat kernel methods.</p>
-<p><a href="heat/index.html">View Heat Equation →</a></p>
 <hr>
 </section>
-<section id="laplace-equation" class="level3">
-<h3 class="anchored" data-anchor-id="laplace-equation"><a href="laplace/index.html">Laplace Equation</a></h3>
+<section id="the-laplace-equation" class="level3">
+<h3 class="anchored" data-anchor-id="the-laplace-equation">The <a href="laplace/index.html">Laplace Equation</a></h3>
 <p><strong>Elliptic / Steady-State</strong></p>
 <p><span class="math display">\[\nabla^2 u = 0\]</span></p>
 <p>The Laplace equation describes steady-state potential fields with no source term. Solutions cover both Cartesian and polar coordinate systems with Dirichlet and Neumann boundary conditions.</p>
-<p><a href="laplace/index.html">View Laplace Equation →</a></p>
 <hr>
 </section>
-<section id="poisson-equation" class="level3">
-<h3 class="anchored" data-anchor-id="poisson-equation"><a href="poisson/index.html">Poisson Equation</a></h3>
+<section id="the-poisson-equation" class="level3">
+<h3 class="anchored" data-anchor-id="the-poisson-equation">The <a href="poisson/index.html">Poisson Equation</a></h3>
 <p><strong>Elliptic / Steady-State</strong></p>
 <p><span class="math display">\[\nabla^2 u = f\]</span></p>
 <p>The Poisson equation extends the Laplace equation with a source term <span class="math inline">\(f\)</span>, modeling phenomena like electrostatics and gravitational fields.</p>
-<p><a href="poisson/index.html">View Poisson Equation →</a></p>
 <hr>
 </section>
-<section id="wave-equation" class="level3">
-<h3 class="anchored" data-anchor-id="wave-equation"><a href="wave/index.html">Wave Equation</a></h3>
+<section id="the-wave-equation" class="level3">
+<h3 class="anchored" data-anchor-id="the-wave-equation">The <a href="wave/index.html">Wave Equation</a></h3>
 <p><strong>Hyperbolic / Time-Dependent</strong></p>
 <p><span class="math display">\[\frac{\partial^2 u}{\partial t^2} = c^2 \nabla^2 u\]</span></p>
 <p>The wave equation describes wave propagation through space and time. Solutions include standing waves in finite domains and traveling waves in infinite domains.</p>
-<p><a href="wave/index.html">View Wave Equation →</a></p>
-<hr>
-</section>
-</section>
-<section id="quick-navigation" class="level2">
-<h2 class="anchored" data-anchor-id="quick-navigation">Quick Navigation</h2>
-<p>Each PDE folder contains: - <strong>index.qmd</strong> - Overview and equation classification - <strong>derivations.qmd</strong> - Detailed mathematical derivations and solution methods</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
