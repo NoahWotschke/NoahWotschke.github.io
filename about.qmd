@@ -1,0 +1,9 @@
+---
+title: "About"
+---
+
+About this site
+
+## Extracurricular Activities
+
+For information about my extracurricular activities and involvement, please see the [Extracurricular Activities](extracurriculars.html) page.
